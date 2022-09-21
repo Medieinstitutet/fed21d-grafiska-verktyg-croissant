@@ -1,5 +1,2 @@
-@import url(global-variables.scss);
-@import url(mobile.scss);
-@import url(tablet.scss);
-@import url(desktop.scss);
-/*# sourceMappingURL=style.css.map */
+
+@import url(global-variables.scss);@import url(mobile.scss);@import url(tablet.scss);@import url(desktop.scss)
