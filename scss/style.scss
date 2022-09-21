@@ -2,4 +2,8 @@
 @import url(mobile.scss);
 @import url(tablet.scss);
 @import url(desktop.scss);
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
