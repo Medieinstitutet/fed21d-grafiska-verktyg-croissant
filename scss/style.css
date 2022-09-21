@@ -1,3 +1,61 @@
+@media only screen and (min-width: 320px) {
+  .head-section {
+    background-image: url("../assets/Imgs/fronpage-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .head-section .logo {
+    width: 184px;
+    height: 187px;
+    position: absolute;
+    bottom: 10px;
+  }
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  nav .hamburger-menu {
+    padding: 3px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 2rem;
+    width: 2rem;
+    top: 5px;
+    right: 5px;
+  }
+  nav .hamburger-menu span {
+    background-color: white;
+    border-radius: 1em;
+    width: 2rem;
+    height: 4px;
+  }
+}
 
-@import url(global-variables.scss);@import url(mobile.scss);@import url(tablet.scss);@import url(desktop.scss)
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
 /*# sourceMappingURL=style.css.map */

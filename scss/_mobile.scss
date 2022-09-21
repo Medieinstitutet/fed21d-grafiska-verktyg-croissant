@@ -1,0 +1,47 @@
+@media only screen and (min-width: 320px) {
+    .head-section {
+      background-image: url('../assets/Imgs/fronpage-img.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+  
+      display: flex;
+      justify-content: center;
+  
+      .logo {
+        width: 184px;
+        height: 187px;
+        position: absolute;
+  
+        bottom: 10px;
+      }
+    }
+  
+  nav{
+      position: sticky;
+      top: 0;
+      width: 100%;
+
+      .hamburger-menu {
+        padding: 3px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 2rem;
+        width: 2rem;
+        top: 5px;
+        right: 5px;
+
+        span{
+            background-color: rgb(255, 255, 255);
+            border-radius: 1em;
+            width: 2rem;
+            height: 4px;
+        }
+    }
+  }
+  }
+  
+  
