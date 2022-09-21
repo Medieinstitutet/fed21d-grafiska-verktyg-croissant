@@ -1,6 +1,7 @@
 {
     "version": 3,
-    "mappings": "",
+
+    "mappings": "AAGA,UAAU;AAGV,YAAY;AAIZ,SAAS;AAST,SAAS;AAKT,iBAAiB",
     "sources": [
         "global-variables.scss"
     ],
