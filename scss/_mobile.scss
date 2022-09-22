@@ -6,25 +6,62 @@
   body {
     background-color: $primary-backgroundcolor;
 
+    #cookie-container {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      background-color: $text;
+      display: flex;
+      justify-content: space-evenly;
+      height: 50px;
+
+      p {
+        margin-top: 5px;
+        color: $primary-backgroundcolor;
+        width: 80%;
+      }
+
+      button {
+        border-radius: 11px;
+        border: none;
+        color: black;
+        background-color: $primary-backgroundcolor;
+        margin: 5px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+
     main {
       display: flex;
       flex-direction: column;
     }
 
     /* section 1*/
+
     .head-section {
       display: grid;
       grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
 
       .h1 {
+        position: relative;
+        top: 250px;
         text-align: center;
         font-size: 50px;
+        font-weight: lighter;
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 1px 2px black;
         color: white;
         grid-column-start: 2;
         grid-column-end: 9;
       }
 
       p {
+        position: relative;
+        top: 100px;
         color: white;
         text-align: center;
         grid-column-start: 2;
@@ -32,7 +69,6 @@
       }
 
       .logo {
-        background-color: white;
         grid-column-start: 4;
         grid-column-end: 7;
       }
@@ -43,8 +79,8 @@
       height: 100vh;
 
       .logo {
-        width: 184px;
-        height: 187px;
+        height: 100%;
+        width: 100%;
         bottom: 10px;
       }
     }
