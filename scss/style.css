@@ -1,29 +1,69 @@
+@charset "UTF-8";
+/* 460 px så ser det inte bra ut behöver ändra måtten*/
+/* Cards*/
+/* Footer */
+/* btn */
+/*links*/
+/* media screen*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @media only screen and (min-width: 320px) {
-  .head-section {
+  body {
+    background-color: #f0ebe3;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .head-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
     background-image: url("../assets/Imgs/fronpage-img.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
-  .head-section .logo {
+  body .head-section .h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 9;
+  }
+  body .head-section p {
+    color: white;
+    text-align: center;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 9;
+  }
+  body .head-section .logo {
+    background-color: white;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 7;
+  }
+  body .head-section .logo {
     width: 184px;
     height: 187px;
-    position: absolute;
     bottom: 10px;
   }
-  nav {
+  body nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
+    background-color: blue;
   }
-  nav .hamburger-menu {
+  body nav .hamburger-menu {
     padding: 3px;
     position: absolute;
     display: -webkit-box;
@@ -44,18 +84,66 @@
     top: 5px;
     right: 5px;
   }
-  nav .hamburger-menu span {
+  body nav .hamburger-menu span {
     background-color: white;
     border-radius: 1em;
     width: 2rem;
     height: 4px;
   }
+  body .middle-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    color: white;
+  }
+  body .middle-section .article-middle-section {
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 30px;
+    color: #252727;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 9;
+    background-color: #7d9d9c;
+  }
+  body .middle-section .article-middle-section h2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  body .middle-section .article-middle-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  body .middle-section .article-middle-section .img-container {
+    border-radius: 30px;
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  body .middle-section .article-middle-section .article-middle-section-p {
+    margin: 30px;
+  }
+  body .middle-section img {
+    width: 500px;
+    height: 500px;
+  }
 }
 
+/* Cards*/
+/* Footer */
+/* btn */
+/*links*/
+/* media screen*/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */
