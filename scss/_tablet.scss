@@ -9,7 +9,7 @@
   }
 
   // nav for bigger screen
-  
+
   .menu-for-bigger-screen {
     position: relative;
     top: 30px;
@@ -64,16 +64,15 @@
   .lower-section-visit-us {
     grid-column-start: 13;
     grid-column-end: 6;
-      span {
-        position: absolute;
-        width: 4.2rem;
-        top: 10px;
-        z-index: -1;
-        height: 8px;
-        border: 2px;
-        background-color: $Card-Background;
-      }
-
+    span {
+      position: absolute;
+      width: 4.2rem;
+      top: 10px;
+      z-index: -1;
+      height: 8px;
+      border: 2px;
+      background-color: $Card-Background;
+    }
   }
 
   .lower-section {
@@ -111,8 +110,6 @@
     }
   }
 
-
-
   #cookie-container {
     height: 50px;
     p {
@@ -128,16 +125,16 @@
     }
   }
 
-  footer{
+  footer {
     grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
     display: grid;
 
-    h3{
+    h3 {
       margin-top: 50px;
       grid-column-start: 4;
       grid-column-end: 7;
     }
-    #footer-text{
+    #footer-text {
       text-align: left;
       margin-left: 20px;
       grid-column-start: 9;
@@ -150,13 +147,11 @@
       grid-column-start: 3;
       grid-column-end: 5;
       grid-row-start: 4;
-
     }
     #Facebook {
       grid-column-start: 5;
       grid-column-end: 7;
       grid-row-start: 4;
-     
     }
     #LinkedIn {
       grid-column-start: 7;
@@ -164,24 +159,23 @@
       grid-row-start: 4;
     }
 
-    input{
+    input {
       height: 30px;
       grid-column-start: 10;
       grid-column-end: 16;
       grid-row-start: 3;
       margin-right: 20px;
-
     }
 
-    button{
+    button {
       height: 30px;
       grid-column-start: 16;
       grid-column-end: 17;
       grid-row-start: 3;
     }
 
-    .bottom-p{
-      text-align: center; 
+    .bottom-p {
+      text-align: center;
       grid-column-start: 2;
       grid-column-end: 18;
       grid-row-start: 5;

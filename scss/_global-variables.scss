@@ -7,7 +7,6 @@ $Card-Background: #7d9d9c;
 /* Footer */
 $Footer-background: #576f72;
 
-
 /* btn */
 $btn-primary-backgroundcolor: #fff5e5;
 $btn-drop-shadow: #000 25%;
@@ -29,6 +28,7 @@ $desktop-font-size: 8rem;
 $spacing: 100px;
 
 //Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&display=swap');
 // Font Variables
 $Dancing-Script: 'Dancing Script', cursive;
+$Inter: 'Inter', sans-serif;
