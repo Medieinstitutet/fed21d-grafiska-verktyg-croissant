@@ -9,3 +9,15 @@
   box-sizing: content-box;
   overflow-x: hidden;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  @use '_mobile.scss';
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  @use '_tablet.scss';
+}
+
+@media screen and (min-width: 1280px) {
+  @use '_desktop.scss';
+}

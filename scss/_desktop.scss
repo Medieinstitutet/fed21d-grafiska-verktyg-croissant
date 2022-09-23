@@ -1,2 +1,21 @@
-@media only screen and (max-width: 1512px) {
+@media only screen and (min-width: 1280px) {
+  /* section 1*/
+  .head-section {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+  }
+  /* section 2*/
+  .middle-section {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+  }
+  /* section 3*/
+  .lower-article {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+  }
 }
