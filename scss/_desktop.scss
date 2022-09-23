@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1001px) {
 
   /* section 1*/
   .head-section {
@@ -30,6 +30,7 @@
  .middle-section {
   display: grid;
   grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+  margin-bottom: 10%;
 
   #article-middle-section1{
       margin-top: 100px;
@@ -59,7 +60,7 @@
    .lower-section {
     display: grid;
     grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-
+    margin-bottom: 10%;
   
     .lower-article{
       grid-column-start: 4;
@@ -77,11 +78,121 @@
       }
   }
   
-
-  }
-
   footer {
+    color: $primary-backgroundcolor;
     display: grid;
-    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    background-color: #576f72;
+    padding-top: 20px;
+    // height: 200px;
 
+    h3 {
+      font-size: 2rem;
+      margin: 20px;
+      text-align: left;
+      // margin-top: 30px;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 2;
+    }
+    p {
+      // margin: 1%;
+      // text-align: center;
+      // grid-column-start: 12;
+      // grid-column-end: 17;
+    }
+    #footer-text {
+      margin-left: 20px;
+      text-align: left;
+      grid-column-start: 12;
+      grid-column-end: 17;
+      grid-row-start: 2;
+    }
+    input {
+      // margin-bottom: 10%;
+      // margin-right: 20px;
+      height: 30px;
+      border: none;
+      border-radius: 11px;
+      grid-column-start: 12;
+      grid-column-end: 15;
+      margin: 20px;
+      grid-row-start: 2;
+    }
+
+    input::placeholder {
+      padding-left: 10px;
+    }
+    button {
+      height: 30px;
+      // margin-bottom: 10%;
+      border: none;
+      border-radius: 11px;
+      grid-column-start: 15;
+      grid-column-end: 17;
+      margin: 20px;
+      grid-row-start: 2;
+    }
+
+    #Instagram {
+      grid-column-start: 6;
+      grid-column-end: 7;
+      margin: 20px;
+      grid-row-start: 2;
+      justify-items: center;
+    }
+    #Facebook {
+      grid-column-start: 8;
+      grid-column-end: 10;
+      grid-row-start: 2;
+      margin: 20px;
+      justify-items: center;
+    }
+    #LinkedIn {
+      grid-column-start: 10;
+      grid-column-end: 12;
+      margin: 20px;
+      grid-row-start: 2;
+      justify-items: center;
+    }
+    .bottom-p {
+      margin-bottom: 10%;
+      // margin: 1%;
+      text-align: center;
+      grid-column-start: 6;
+      grid-column-end: 14;
+      grid-row-start: 3;
+    }
   }
+
+  #cookie-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: $text;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: black;
+    p {
+      text-align: right;
+      margin-top: 20px;
+      color: $primary-backgroundcolor;
+      width: 80%;
+    }
+
+    button {
+      border-radius: 11px;
+      border: none;
+      color: black;
+      background-color: $primary-backgroundcolor;
+      margin: 5px;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+
+}
