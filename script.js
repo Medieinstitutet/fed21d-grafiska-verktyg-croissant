@@ -5,3 +5,9 @@ function CookieTextDown() {
 
   console.log('Tjena, tjena');
 }
+const menuBtn = document.querySelector('#menu-button');
+
+menuBtn.addEventListener('click', () => {
+  document.querySelector('h1').style.opacity = '0.4';
+  menuBtn.classList.toggle('menu-open');
+});
