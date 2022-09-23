@@ -257,6 +257,22 @@
     -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
         grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
   }
+  .head-section h1 {
+    -ms-grid-column: 6;
+        grid-column-start: 6;
+    grid-column-end: 21;
+  }
+  .head-section p {
+    -ms-grid-column: 6;
+        grid-column-start: 6;
+    grid-column-end: 21;
+  }
+  .head-section img {
+    width: 100%;
+    -ms-grid-column: 12;
+        grid-column-start: 12;
+    grid-column-end: 15;
+  }
   /* section 2*/
   .middle-section {
     display: -ms-grid;
@@ -264,19 +280,49 @@
     -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
         grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
   }
+  .middle-section #article-middle-section1 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 9;
+  }
+  .middle-section #article-middle-section2 {
+    -ms-grid-column: 10;
+        grid-column-start: 10;
+    grid-column-end: 17;
+  }
+  .middle-section #article-middle-section3 {
+    -ms-grid-column: 18;
+        grid-column-start: 18;
+    grid-column-end: 25;
+  }
   /* section 3*/
-  .lower-article {
+  .lower-section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
         grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
   }
-  footer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+  .lower-section .lower-article {
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 13;
   }
+  .lower-section .lower-article img {
+    width: 100%;
+  }
+  .lower-section #bread {
+    -ms-grid-column: 13;
+        grid-column-start: 13;
+    grid-column-end: 24;
+    width: 100%;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+      grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
 }
 
 /* Cards*/
