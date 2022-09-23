@@ -12,10 +12,17 @@ let hamburgerSpans = document.querySelectorAll('span.hamburger-spans');
 hambugermeny.addEventListener('click', () => {
   hambugermeny.innerHTML = '';
   let image = document.createElement('img');
+  if (toogle) {
+    hamburgerSpans[0].style.display = 'none';
+    menuOverlay.style.display = 'block';
+    hambugermeny.append(image);
+    toogle = !toogle;
+  } else {
+    hamburgerSpans[0].style.display = 'block';
+    hambugermeny.append(hamburgerSpans[0]);
+    menuOverlay.style.display = 'none';
+    toogle = !toogle;
+  }
   image.src = './assets/cross.svg';
   console.log('click');
-
-  hamburgerSpans[0].style.display = 'none';
-  menuOverlay.style.display = 'none';
-  hambugermeny.append(image);
 });
