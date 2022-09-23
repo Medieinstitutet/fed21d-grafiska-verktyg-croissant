@@ -1,0 +1,181 @@
+
+    body {
+      background-color: $primary-backgroundcolor;
+  
+      #cookie-container {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background-color: $text;
+        display: flex;
+        justify-content: space-evenly;
+
+  
+        p {
+          color: $primary-backgroundcolor;
+          width: 80%;
+        }
+  
+        button {
+          border-radius: 11px;
+          border: none;
+          color: black;
+          background-color: $primary-backgroundcolor;
+          font-weight: bold;
+        }
+      }
+  
+      main {
+        // display: flex;
+        // flex-direction: column;
+      }
+  
+      /* section 1*/
+  
+      .head-section {
+        
+        .h1 {
+          position: relative;
+          text-align: center;
+          font-weight: lighter;
+          font-family: 'Dancing Script', cursive;
+          text-shadow: 1px 2px black;
+          color: white;
+        }
+  
+        p {
+          position: relative;
+          color: white;
+          text-align: center;
+      
+        }
+  
+        background-image: url('../assets/Imgs/fronpage-img.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+  
+      /* section 2*/
+  
+      .middle-section {
+        
+  
+        .article-middle-section {
+          text-align: center;
+        //   border-radius: 30px;
+          color: $text;
+          background-color: $Card-Background;
+  
+          h2 {
+            text-align: center;
+          }
+  
+          img {
+            width: 100%;
+            height: 100%;
+            // border-radius: 30px;
+          }
+  
+          .img-container {
+            // border-radius: 30px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+  
+    /* section 3*/
+    .lower-section-visit-us {
+      
+      width: 100%;
+  
+      h3 {
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        span {
+          position: absolute;
+          width: 4.2rem;
+          top: 10px;
+          z-index: -1;
+          height: 0.5rem;
+          background-color: $Card-Background;
+        }
+      }
+    }
+  
+    .lower-section {
+  
+      .lower-article {
+        color: black;
+        background-color: $Card-Background;
+  
+        p {
+          text-align: center;
+
+        }
+        button {
+          -webkit-box-shadow: 0px 8px 6px -2px #000000;
+          box-shadow: 0px 8px 6px -2px #000000;
+          width: 100%;
+          text-align: center;
+          border-radius: 20px;
+          background-color: $btn-primary-backgroundcolor;
+          border: none;
+        }
+      }
+  
+      img {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+      }
+    }
+
+    #button {
+      -webkit-box-shadow: 0px 8px 6px -2px #000000;
+      box-shadow: 0px 8px 6px -2px #000000;
+      text-align: center;
+      font-size: 1.5rem;
+      border-radius: 20px;
+      background-color: $btn-primary-backgroundcolor;
+      border: none;
+    }
+  
+    /* Footer*/
+  
+    footer {
+      color: $primary-backgroundcolor;
+      background-color: $Footer-background;
+  
+      h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+
+      }
+      input {
+        margin-bottom: 10%;
+        border: none;
+        border-radius: 11px;
+      }
+  
+      input::placeholder {
+        padding-left: 10px;
+      }
+      button {
+        color: black;
+        border: none;
+        border-radius: 11px;
+      }
+  
+      .bottom-p {
+        margin-bottom: 10%;
+      }
+    }
