@@ -110,13 +110,11 @@ footer {
   grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
   background-color: #576f72;
   padding-top: 20px;
-  // height: 200px;
 
   h3 {
     font-size: 2rem;
     margin: 20px;
     text-align: left;
-    // margin-top: 30px;
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 2;
@@ -130,8 +128,6 @@ footer {
     grid-row-start: 2;
   }
   input {
-    // margin-bottom: 10%;
-    // margin-right: 20px;
     height: 30px;
     border: none;
     border-radius: 11px;
@@ -146,7 +142,6 @@ footer {
   }
   button {
     height: 30px;
-    // margin-bottom: 10%;
     border: none;
     border-radius: 11px;
     grid-column-start: 15;
