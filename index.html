@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,18 +11,28 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
+    <meta name="description" content="Author:Magnus,Jonas,Jenny,Anton" />
     <script src="script.js" defer></script>
     <title>Croissants</title>
   </head>
   <body>
-    <main class="main-container">
+    <main
+      class="main-container"
+      aria-label="main container thats includes sections and articles"
+    >
       <nav>
-        <article class="hamburger-menu">
+        <article
+          class="hamburger-menu"
+          aria-label="hamburger-menu, thats includes spans, for mobile"
+        >
           <span></span>
           <span></span>
           <span></span>
         </article>
-        <article class="menu-for-bigger-screen">
+        <article
+          class="menu-for-bigger-screen"
+          aria-label="This will only be use for bigger screens, Home, About, Contact links are here"
+        >
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
@@ -29,7 +40,10 @@
       </nav>
 
       <!-- section 1-->
-      <section class="head-section">
+      <section
+        class="head-section"
+        aria-label="A short summary about our bakery"
+      >
         <h1 class="h1">Bakery Croissants</h1>
 
         <!-- img -->
@@ -46,19 +60,33 @@
       </section>
 
       <!-- section 2 -->
-      <section class="middle-section">
-        <article id="article-middle-section1" class="article-middle-section">
+      <section
+        class="middle-section"
+        aria-label="Middle section of the pages. That includes three cards each one being a article follow up by short text and our opening hours"
+      >
+        <article
+          id="article-middle-section1"
+          class="article-middle-section"
+          aria-label="First card with a picture of our good buns and with a short description "
+        >
           <h2>Buns</h2>
           <p class="article-middle-section-p">
             Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
             candy canes cheesecake danish jelly beans cotton candy.
           </p>
-          <article class="img-container">
+          <article
+            class="img-container"
+            aria-label="This article contains our picture of good buns"
+          >
             <img src="assets/Imgs/card-img-buns.webp" alt="Buns" />
           </article>
         </article>
 
-        <article id="article-middle-section2" class="article-middle-section">
+        <article
+          id="article-middle-section2"
+          class="article-middle-section"
+          aria-label="Second card with a picture of our good bread and with a short description "
+        >
           <h2>Bread</h2>
           <p class="article-middle-section-p">
             Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
@@ -75,19 +103,31 @@
             Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
             candy canes cheesecake danish jelly beans cotton candy.
           </p>
-          <article class="img-container">
+          <article
+            class="img-container"
+            aria-label="This article contains our picture of good bread"
+          >
             <img src="assets/Imgs/card-breads-img.webp" alt="Croassant" />
           </article>
         </article>
       </section>
       <!-- section 3 -->
 
-      <article class="lower-section-visit-us">
+      <article
+        class="lower-section-visit-us"
+        aria-label="This article contains a short text"
+      >
         <h3>Visit Us <span></span></h3>
       </article>
 
-      <section class="lower-section">
-        <article class="lower-article">
+      <section
+        class="lower-section"
+        aria-label="This section contains articles with text with our opening hours"
+      >
+        <article
+          class="lower-article"
+          aria-label="This article is showing our opening hours and a button leading to our menu"
+        >
           <p>
             Opening hours <br />
             Mon-Fri <br />
@@ -107,7 +147,10 @@
     </main>
 
     <!-- cookies text -->
-    <article id="cookie-container">
+    <article
+      id="cookie-container"
+      aria-label="Cookie container, show our cookie text and button for accepting our term and conditions when it comes to cookies"
+    >
       <p>We are using freshly baked cookies - Accept yours by clicking here</p>
       <button onclick="CookieTextDown()">Accept</button>
     </article>
