@@ -80,11 +80,24 @@
     grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
     margin-bottom: 10%;
 
-    .lower-article {
-      grid-column-start: 4;
-      grid-column-end: 13;
+  
+    .lower-article{
+      width: 100%;
+      grid-column-start: 13;
+      grid-column-end: 24;
+      grid-row-start: 1;
 
-      img {
+      img{
+        display: block;
+        width: 100%;        
+      }
+      }
+
+      #bread{
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 1;
+
         width: 100%;
       }
     }
