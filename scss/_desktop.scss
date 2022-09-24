@@ -63,17 +63,21 @@
     margin-bottom: 10%;
   
     .lower-article{
-      grid-column-start: 4;
-      grid-column-end: 13;
+      width: 100%;
+      grid-column-start: 13;
+      grid-column-end: 24;
+      grid-row-start: 1;
 
       img{
+        display: block;
         width: 100%;        
       }
       }
 
       #bread{
-        grid-column-start: 13;
-        grid-column-end: 24;
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 1;
         width: 100%;
       }
   }
