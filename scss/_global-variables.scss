@@ -20,7 +20,7 @@ $btn-disabled: #858585;
 $links-default: #000;
 $links-hover: #252727;
 
-/* media screen*/
+/* media screen font size*/
 $mobile-font-size: 3, 625rem;
 $tablet-font-size: 6rem;
 $desktop-font-size: 8rem;
@@ -28,6 +28,7 @@ $desktop-font-size: 8rem;
 $spacing: 100px;
 
 //Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&display=swap'); // Font Variables
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&family=Montserrat:wght@400;600&display=swap');
 $Dancing-Script: 'Dancing Script', cursive;
 $Inter: 'Inter', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
