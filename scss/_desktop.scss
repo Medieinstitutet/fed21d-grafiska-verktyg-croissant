@@ -102,111 +102,110 @@
       width: 100%;
     }
   }
-}
-
-footer {
-  color: $primary-backgroundcolor;
-  display: grid;
-  grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-  background-color: #576f72;
-  padding-top: 20px;
-
-  h3 {
-    font-size: 2rem;
-    margin: 20px;
-    text-align: left;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 2;
-  }
-
-  #footer-text {
-    margin-left: 20px;
-    text-align: left;
-    grid-column-start: 12;
-    grid-column-end: 17;
-    grid-row-start: 2;
-  }
-  input {
-    height: 30px;
-    border: none;
-    border-radius: 11px;
-    grid-column-start: 12;
-    grid-column-end: 15;
-    margin: 20px;
-    grid-row-start: 2;
-  }
-
-  input::placeholder {
-    padding-left: 10px;
-  }
-  button {
-    height: 30px;
-    border: none;
-    border-radius: 11px;
-    grid-column-start: 15;
-    grid-column-end: 17;
-    margin: 20px;
-    grid-row-start: 2;
-  }
-
-  #Instagram {
-    grid-column-start: 6;
-    grid-column-end: 7;
-    margin: 20px;
-    grid-row-start: 2;
-    justify-items: center;
-  }
-  #Facebook {
-    grid-column-start: 8;
-    grid-column-end: 10;
-    grid-row-start: 2;
-    margin: 20px;
-    justify-items: center;
-  }
-  #LinkedIn {
-    grid-column-start: 10;
-    grid-column-end: 12;
-    margin: 20px;
-    grid-row-start: 2;
-    justify-items: center;
-  }
-  .bottom-p {
-    margin-bottom: 10%;
-    font-style: italic;
-    text-align: center;
-    grid-column-start: 6;
-    grid-column-end: 14;
-    grid-row-start: 3;
-  }
-}
-
-#cookie-container {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background-color: $text;
-  display: flex;
-  justify-content: space-evenly;
-  height: 50px;
-  background-color: black;
-  p {
-    text-align: right;
-    margin-top: 20px;
+  footer {
     color: $primary-backgroundcolor;
-    width: 80%;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    background-color: #576f72;
+    padding-top: 20px;
+  
+    h3 {
+      font-size: 2rem;
+      margin: 20px;
+      text-align: left;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 2;
+    }
+  
+    #footer-text {
+      margin-left: 20px;
+      text-align: left;
+      grid-column-start: 12;
+      grid-column-end: 17;
+      grid-row-start: 2;
+    }
+    input {
+      height: 30px;
+      border: none;
+      border-radius: 11px;
+      grid-column-start: 12;
+      grid-column-end: 15;
+      margin: 20px;
+      grid-row-start: 2;
+    }
+  
+    input::placeholder {
+      padding-left: 10px;
+    }
+    button {
+      height: 30px;
+      border: none;
+      border-radius: 11px;
+      grid-column-start: 15;
+      grid-column-end: 17;
+      margin: 20px;
+      grid-row-start: 2;
+    }
+  
+    #Instagram {
+      grid-column-start: 6;
+      grid-column-end: 7;
+      margin: 20px;
+      grid-row-start: 2;
+      justify-items: center;
+    }
+    #Facebook {
+      grid-column-start: 8;
+      grid-column-end: 10;
+      grid-row-start: 2;
+      margin: 20px;
+      justify-items: center;
+    }
+    #LinkedIn {
+      grid-column-start: 10;
+      grid-column-end: 12;
+      margin: 20px;
+      grid-row-start: 2;
+      justify-items: center;
+    }
+    .bottom-p {
+      margin-bottom: 10%;
+      font-style: italic;
+      text-align: center;
+      grid-column-start: 6;
+      grid-column-end: 14;
+      grid-row-start: 3;
+    }
   }
-
-  button {
-    border-radius: 11px;
-    border: none;
-    color: black;
-    background-color: $primary-backgroundcolor;
-    margin: 5px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-  }
+  
+  #cookie-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: $text;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: black;
+    p {
+      text-align: right;
+      margin-top: 20px;
+      color: $primary-backgroundcolor;
+      width: 80%;
+    }
+  
+    button {
+      border-radius: 11px;
+      border: none;
+      color: black;
+      background-color: $primary-backgroundcolor;
+      margin: 5px;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+}
 }
