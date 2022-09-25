@@ -18,7 +18,7 @@ body {
     button {
       border-radius: 11px;
       border: none;
-      color: black;
+      color:$black;
       background-color: $primary-backgroundcolor;
       font-weight: bold;
     }
@@ -31,12 +31,12 @@ body {
     p {
       position: relative;
       text-align: center;
-      color: white;
+      color: $white;
     }
     .h1 {
       font-weight: lighter;
       font-family: $Dancing-Script;
-      text-shadow: 1px 2px black;
+      text-shadow: 1px 2px $black;
     }
 
     p {
@@ -84,12 +84,12 @@ body {
 /* section 3*/
 .lower-section-visit-us {
   width: 100%;
-
   h3 {
     text-align: center;
     position: relative;
     display: flex;
     justify-content: center;
+    font-family: $Montserrat;
 
     span {
       position: absolute;
@@ -104,7 +104,7 @@ body {
 
 .lower-section {
   .lower-article {
-    color: black;
+    color: $black;
     background-color: $Card-Background;
 
     p,
@@ -113,8 +113,8 @@ body {
       font-family: $Montserrat;
     }
     button {
-      -webkit-box-shadow: 0px 8px 6px -2px #000000;
-      box-shadow: 0px 8px 6px -2px #000000;
+      -webkit-box-shadow: 0px 8px 6px -2px $black;
+      box-shadow: 0px 8px 6px -2px $black;
       width: 100%;
       border-radius: 20px;
       background-color: $btn-primary-backgroundcolor;
@@ -134,8 +134,8 @@ body {
 }
 
 #button {
-  -webkit-box-shadow: 0px 8px 6px -2px #000000;
-  box-shadow: 0px 8px 6px -2px #000000;
+  -webkit-box-shadow: 0px 8px 6px -2px $black;
+  box-shadow: 0px 8px 6px -2px $black;
   text-align: center;
   font-size: 1.5rem;
   font-family: $Inter;

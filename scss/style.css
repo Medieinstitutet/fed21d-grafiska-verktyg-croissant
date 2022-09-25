@@ -82,7 +82,7 @@
     right: 5px;
   }
   body nav .hamburger-menu span {
-    background-color: white;
+    background-color: #000;
     border-radius: 1em;
     width: 2rem;
     height: 4px;
@@ -150,15 +150,12 @@
     grid-column-end: 9;
     margin-bottom: 100px;
   }
-  #btnContainer {
+  #btnContainer, #button {
     -ms-grid-column: 4;
         grid-column-start: 4;
     grid-column-end: 7;
   }
   #button {
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 7;
     margin-bottom: 10px;
     margin-top: 10px;
     height: 80;
@@ -171,18 +168,17 @@
     -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
         grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
   }
-  footer h3 {
-    font-size: 2rem;
-    margin: 20px;
+  footer h3, footer p {
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 9;
   }
+  footer h3 {
+    font-size: 2rem;
+    margin: 20px;
+  }
   footer p {
     margin: 1%;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 9;
   }
   footer input {
     margin-right: 20px;
@@ -195,9 +191,6 @@
     margin-bottom: 10%;
     height: 30px;
     margin-bottom: 10%;
-    -ms-grid-column: 7;
-        grid-column-start: 7;
-    grid-column-end: 9;
   }
   footer #Instagram {
     -ms-grid-column: 3;
@@ -209,7 +202,7 @@
         grid-column-start: 5;
     grid-column-end: 7;
   }
-  footer #LinkedIn {
+  footer #LinkedIn, footer button {
     -ms-grid-column: 7;
         grid-column-start: 7;
     grid-column-end: 9;
@@ -525,6 +518,17 @@
     grid-column-end: 25;
   }
   /* section 3*/
+  .lower-section-visit-us {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .lower-section-visit-us h3 {
+    font-size: 1.5rem;
+  }
+  .lower-section-visit-us h3 #span {
+    top: 20px;
+    width: 6.3rem;
+  }
   .lower-section {
     display: -ms-grid;
     display: grid;
@@ -669,7 +673,7 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     height: 50px;
-    background-color: black;
+    background-color: #000;
   }
   #cookie-container p {
     text-align: right;
@@ -680,7 +684,7 @@
   #cookie-container button {
     border-radius: 11px;
     border: none;
-    color: black;
+    color: #000;
     background-color: #f0ebe3;
     margin: 5px;
     padding: 5px;
@@ -724,7 +728,7 @@ body #cookie-container p {
 body #cookie-container button {
   border-radius: 11px;
   border: none;
-  color: black;
+  color: #000;
   background-color: #f0ebe3;
   font-weight: bold;
 }
@@ -740,13 +744,13 @@ body .head-section .h1,
 body .head-section p {
   position: relative;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 body .head-section .h1 {
   font-weight: lighter;
   font-family: "Dancing Script", cursive;
-  text-shadow: 1px 2px black;
+  text-shadow: 1px 2px #000;
 }
 
 body .head-section p {
@@ -798,6 +802,7 @@ body .middle-section .article-middle-section .img-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .lower-section-visit-us h3 span {
@@ -810,7 +815,7 @@ body .middle-section .article-middle-section .img-container {
 }
 
 .lower-section .lower-article {
-  color: black;
+  color: #000;
   background-color: #7d9d9c;
 }
 
@@ -821,8 +826,8 @@ body .middle-section .article-middle-section .img-container {
 }
 
 .lower-section .lower-article button {
-  -webkit-box-shadow: 0px 8px 6px -2px #000000;
-  box-shadow: 0px 8px 6px -2px #000000;
+  -webkit-box-shadow: 0px 8px 6px -2px #000;
+  box-shadow: 0px 8px 6px -2px #000;
   width: 100%;
   border-radius: 20px;
   background-color: #fff5e5;
@@ -842,8 +847,8 @@ body .middle-section .article-middle-section .img-container {
 }
 
 #button {
-  -webkit-box-shadow: 0px 8px 6px -2px #000000;
-  box-shadow: 0px 8px 6px -2px #000000;
+  -webkit-box-shadow: 0px 8px 6px -2px #000;
+  box-shadow: 0px 8px 6px -2px #000;
   text-align: center;
   font-size: 1.5rem;
   font-family: "Inter", sans-serif;
@@ -907,7 +912,7 @@ footer button {
   @use '_tablet.scss';
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1001px) {
   @use '_desktop.scss';
 }
 /*# sourceMappingURL=style.css.map */
