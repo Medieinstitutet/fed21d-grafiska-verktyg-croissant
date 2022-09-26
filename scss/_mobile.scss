@@ -49,32 +49,98 @@
       }
     }
 
-    nav {
-      position: fixed;
-      top: 0px;
-      height: 47px;
-      width: 100%;
+    
+//****// Navigation and Hamburger menu //****//
+  span {
+   background-color: black;
+   height: 7.42px;
+   width: 50px;
+   display: block;
+   margin: 5px;
+   border-radius: 4px;
+   position: relative;
+  }
+  #menu-button {
+   border: none;
+   position: fixed;
+   right: 20px;
+   z-index: 998;
+   background-color: rgba(255, 255, 255, 0);
+   cursor: pointer;
+   margin-top: 20px;
+  }
+  .menu-open {
+   border: none;
+   position: fixed;
+   top: 5px;
+   right: 20px;
+   z-index: 998;
+   background-color: rgba(255, 255, 255, 0);
+   cursor: pointer;
+   margin-top: 10px;
+  }
 
-      .hamburger-menu {
-        position: absolute;
-        padding: 3px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 2rem;
-        width: 2rem;
-        top: 5px;
-        right: 5px;
+  .menu-open ~ nav {
+   display: block;
+  }
 
-        span {
-          background-color: $black; //äNDRA DENNA
-          border-radius: 1em;
-          width: 2rem;
-          height: 4px;
-        }
-      }
-    }
+
+.menu-open :first-child {
+   display: none;
+  }
+  .menu-open :nth-child(2) {
+   margin-top: 15pix;
+   background-color: black;
+   -webkit-transform: rotate(-45deg);
+   transform: rotate(45deg);
+   margin-top: 15;
+   margin-left: 1;
+  }
+ }
+
+ .menu-open :nth-child(3) {
+  background-color: black;
+  -webkit-transform: rotate(-45deg);
+  transform-origin: 10px;
+ }
+}
+
+nav ul li {
+ list-style: none;
+ margin: 35px;
+}
+nav ul li a {
+ text-decoration: none;
+ font-size: 40px;
+ color: black;
+ letter-spacing: 2px;
+ position: relative;
+}
+nav ul li a::after {
+ content: '';
+ height: 3px;
+ width: 0;
+ position: absolute;
+}
+
+nav {
+ position: fixed;
+ width: 100%;
+ height: 100vh;
+ background: rgba(255, 255, 255, 0.8);
+ z-index: 2;
+ top: 0;
+ left: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ display: none;
+ padding-top: 100px;
+}
+
+//****// Nav and Hamburger Menu ENDS // ****//
+
 
     /* section 2*/
 
@@ -104,7 +170,7 @@
         height: 500px;
       }
     }
-  }
+  
 
   /* section 3*/
   .lower-section-visit-us {
@@ -199,4 +265,4 @@
       margin-bottom: 10%;
     }
   }
-}
+

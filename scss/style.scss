@@ -8,7 +8,8 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  overflow-x: hidden;
+  // overflow-x: hidden;
+  background-position: center center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
