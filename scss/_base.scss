@@ -55,6 +55,24 @@ body {
     width: 100%;
   }
 
+  .menu-for-bigger-screen{ 
+    .nav-menu{
+        position: relative;
+        top: 30px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        li{
+          a{
+            text-decoration: none;
+            font-family: $Montserrat;
+            color: $black;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
   /* section 2*/
 
   .middle-section {

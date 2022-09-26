@@ -6,19 +6,21 @@
     display: flex;
     justify-content: center;
   }
-  .menu-for-bigger-screen {
-    position: relative;
-    top: 30px;
-    width: 40rem;
-    font-size: 2rem;
-    font-family: $Inter;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    a {
-      text-decoration: none;
+ 
+  #menu-button{
+    display: none;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    width: 60%;
+    li{
+      a{
+        font-size: 1.7rem;
+      }
     }
   }
+
   /* section 1*/
   .head-section {
     display: grid;
