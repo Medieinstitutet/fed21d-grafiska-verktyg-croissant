@@ -38,24 +38,29 @@
     <title>Croissants</title>
   </head>
   <body>
-
-    <header>
-      <button id="menu-button">
-        <span class="burgerLines"></span>
-        <span class="burgerLines"></span>
-        <span class="burgerLines"></span>
-      </button>
-      <nav class="nav-container">
-        <ul class="nav-menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-
+    <main
+      class="main-container"
+      aria-label="main container thats includes sections and articles"
+    >
+      <nav>
+        <article
+          class="hamburger-menu"
+          aria-label="hamburger-menu, thats includes spans, for mobile"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </article>
+        <article
+          class="menu-for-bigger-screen"
+          aria-label="This will only be use for bigger screens, Home, About, Contact links are here"
+        >
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </article>
       </nav>
-    </header>
 
-    <main class="main-container">
       <!-- section 1-->
       <section
         class="head-section"
