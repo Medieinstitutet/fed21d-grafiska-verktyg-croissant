@@ -49,8 +49,21 @@
       }
     }
 
+
     
 //****// Navigation and Hamburger menu //****//
+
+.nav-menu {
+  width:100%;
+  flex-direction: column;
+  justify-content: center;
+  li{
+    a{
+      font-size: 2rem;
+    }
+  }
+}
+
   span {
    background-color: black;
    height: 7.42px;
@@ -103,7 +116,7 @@
   -webkit-transform: rotate(-45deg);
   transform-origin: 10px;
  }
-}
+
 
 nav ul li {
  list-style: none;
@@ -265,4 +278,4 @@ nav {
       margin-bottom: 10%;
     }
   }
-
+}

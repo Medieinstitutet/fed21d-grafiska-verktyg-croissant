@@ -9,20 +9,21 @@
   }
 
   // nav for bigger screen
+  #menu-button{
+    display: none;
+  }
 
-  .menu-for-bigger-screen {
-    position: relative;
-    top: 30px;
-    width: 19rem;
-    font-size: 1.5rem;
-    font-family: $Inter;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    a {
-      text-decoration: none;
+  
+  .nav-menu {
+    flex-direction: row;
+    width: 60%;
+    li{
+      a{
+        font-size: 1.5rem;
+      }
     }
   }
+
   .head-section {
     display: grid;
     grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
