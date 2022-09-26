@@ -2,10 +2,23 @@
 @import './tablet';
 @import './desktop';
 @import './global-variables';
+@import './base';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   background-position: center center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  @use '_mobile.scss';
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  @use '_tablet.scss';
+}
+
+@media screen and (min-width: 1001px) {
+  @use '_desktop.scss';
 }

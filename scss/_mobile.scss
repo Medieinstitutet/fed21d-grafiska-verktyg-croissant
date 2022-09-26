@@ -2,36 +2,24 @@
 
 @import './global-variables';
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 550px) {
   body {
-    background-color: $primary-backgroundcolor;
+    .menu-for-bigger-screen {
+      display: none;
+    }
 
     #cookie-container {
-      position: fixed;
-      bottom: 0px;
-      width: 100%;
-      background-color: $text;
-      display: flex;
-      justify-content: space-evenly;
       height: 50px;
-
       p {
         margin-top: 5px;
-        color: $primary-backgroundcolor;
-        width: 80%;
       }
 
       button {
-        border-radius: 11px;
-        border: none;
-        color: black;
-        background-color: $primary-backgroundcolor;
         margin: 5px;
         padding: 5px;
         padding-left: 10px;
         padding-right: 10px;
         font-size: 1rem;
-        font-weight: bold;
       }
     }
     //****// Navigation and Hamburger menu //****//
@@ -127,7 +115,9 @@ main {
   flex-direction: column;
 }
 
+
 /* section 1*/
+
 
 .head-section {
   display: grid;
@@ -153,10 +143,12 @@ main {
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 9;
+
   }
 
   .logo {
     grid-column-start: 4;
+
     grid-column-end: 7;
   }
 
@@ -173,6 +165,7 @@ main {
 }
 
 /* section 2*/
+
 
 .middle-section {
   display: grid;
@@ -280,6 +273,7 @@ main {
       background-color: $btn-primary-backgroundcolor;
       border: none;
       margin-bottom: 50px;
+
     }
   }
 
@@ -370,5 +364,6 @@ footer {
   }
   .bottom-p {
     margin-bottom: 10%;
+
   }
 }

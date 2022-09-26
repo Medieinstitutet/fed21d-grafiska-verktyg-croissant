@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,10 +11,34 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
+    <meta name="description" content="Author:Magnus,Jonas,Jenny,Anton" />
+    <meta name="description" content="Author:Magnus,Jonas,Jenny,Anton" />
+    <meta property="og:title" content="Croissants" />
+    <meta property="og:type" content="Website" />
+
+    <link rel="manifest" href="./assets/Imgs/Favicon/site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/Imgs/Favicon/favicon-16x16.png?"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/Imgs/Favicon/favicon-32x32.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/Imgs/Favicon/apple-touch-icon.png?"
+    />
+    <meta name="theme-color" content="#fafafa" />
     <script src="script.js" defer></script>
     <title>Croissants</title>
   </head>
   <body>
+
     <header>
       <button id="menu-button">
         <span class="burgerLines"></span>
@@ -26,15 +51,17 @@
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
         </ul>
+
       </nav>
     </header>
 
     <main class="main-container">
       <!-- section 1-->
-      <section class="head-section">
+      <section
+        class="head-section"
+        aria-label="A short summary about our bakery"
+      >
         <h1 class="h1">Bakery Croissants</h1>
-
-        <!-- img -->
 
         <p>
           Cupcake ipsum dolor sit amet brownie marshmallow tiramisu biscuit.
@@ -47,20 +74,34 @@
         />
       </section>
 
-      <!-- section 2-->
-      <section class="middle-section">
-        <article class="article-middle-section">
+      <!-- section 2 -->
+      <section
+        class="middle-section"
+        aria-label="Middle section of the pages. That includes three cards each one being a article follow up by short text and our opening hours"
+      >
+        <article
+          id="article-middle-section1"
+          class="article-middle-section"
+          aria-label="First card with a picture of our good buns and with a short description "
+        >
           <h2>Buns</h2>
           <p class="article-middle-section-p">
             Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
             candy canes cheesecake danish jelly beans cotton candy.
           </p>
-          <article class="img-container">
+          <article
+            class="img-container"
+            aria-label="This article contains our picture of good buns"
+          >
             <img src="assets/Imgs/card-img-buns.webp" alt="Buns" />
           </article>
         </article>
 
-        <article class="article-middle-section">
+        <article
+          id="article-middle-section2"
+          class="article-middle-section"
+          aria-label="Second card with a picture of our good bread and with a short description "
+        >
           <h2>Bread</h2>
           <p class="article-middle-section-p">
             Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
@@ -71,25 +112,37 @@
           </article>
         </article>
 
-        <article class="article-middle-section">
+        <article id="article-middle-section3" class="article-middle-section">
           <h2>Croissants</h2>
           <p class="article-middle-section-p">
             Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
             candy canes cheesecake danish jelly beans cotton candy.
           </p>
-          <article class="img-container">
+          <article
+            class="img-container"
+            aria-label="This article contains our picture of good bread"
+          >
             <img src="assets/Imgs/card-breads-img.webp" alt="Croassant" />
           </article>
         </article>
       </section>
       <!-- section 3 -->
 
-      <section class="lower-section">
-        <article class="lower-section-visit-us">
-          <h3>Visit Us <span></span></h3>
-        </article>
+      <article
+        class="lower-section-visit-us"
+        aria-label="This article contains a short text"
+      >
+        <h3>Visit Us <span id="span"></span></h3>
+      </article>
 
-        <article class="lower-article">
+      <section
+        class="lower-section"
+        aria-label="This section contains articles with text with our opening hours"
+      >
+        <article
+          class="lower-article"
+          aria-label="This article is showing our opening hours and a button leading to our menu"
+        >
           <p>
             Opening hours <br />
             Mon-Fri <br />
@@ -97,14 +150,22 @@
             Sat-Sun <br />
             8 am - 2pm
           </p>
-          <button id="button">Meny</button>
+          <button id="button">Menu</button>
+          <img
+            id="Hands"
+            src="assets/Imgs/footer-img-desktop.webp"
+            alt="Hands"
+          />
         </article>
-        <img src="assets/Imgs/footer-img-bread.webp" alt="Bread" />
+        <img id="bread" src="assets/Imgs/footer-img-bread.webp" alt="Bread" />
       </section>
     </main>
 
     <!-- cookies text -->
-    <article id="cookie-container">
+    <article
+      id="cookie-container"
+      aria-label="Cookie container, show our cookie text and button for accepting our term and conditions when it comes to cookies"
+    >
       <p>We are using freshly baked cookies - Accept yours by clicking here</p>
       <button onclick="CookieTextDown()">Accept</button>
     </article>
@@ -112,7 +173,7 @@
     <!-- Footer -->
     <footer>
       <h3>Contact</h3>
-      <p>New bread dropping soon - subscribe here</p>
+      <p id="footer-text">New bread dropping soon - subscribe here</p>
       <input type="text" placeholder="name@mail.com" />
       <button>Subscribe</button>
       <img
