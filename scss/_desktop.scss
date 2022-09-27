@@ -1,0 +1,271 @@
+@media only screen and (min-width: 1001px) {
+  nav {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  #menu-button{
+    display: none;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    width: 60%;
+    li{
+      a{
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  /* section 1*/
+  .head-section {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+
+    h1 {
+      top: 250px;
+      font-size: 100px;
+      grid-column-start: 6;
+      grid-column-end: 21;
+    }
+    p {
+      top: 100px;
+      grid-column-start: 6;
+      grid-column-end: 21;
+    }
+
+    img {
+      width: 100%;
+      grid-column-start: 12;
+      grid-column-end: 15;
+    }
+  }
+
+  /* section 2*/
+
+  .middle-section {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    margin-bottom: 10%;
+
+    // Animation for Buns
+    #bunsImg {
+      cursor: pointer;
+      margin-top: -50px;
+      position: relative;
+      z-index: 10;
+    }
+    #article-middle-section1:hover {
+      #bunsImg {
+        transform: translateY(100px);
+        transition: 2s;
+      }
+    }
+    // Animation for BunS ends here
+
+    //Animation for Bread starts here
+    #bread {
+      margin-top: -50px;
+    }
+    #article-middle-section2:hover {
+      transform: translateY(-100px);
+      transition: 2s;
+      #breadImg {
+        transform: translateY(150px);
+        transition: 2s;
+        z-index: 10;
+      }
+    }
+    //Animation for Bread ends here
+    //Animation for Croissants starts here
+    #croissantImg {
+      margin-top: -50px;
+    }
+    #article-middle-section3:hover {
+      transform: translateY(-100px);
+      transition: 2s;
+      #croissantImg {
+        transform: translateY(100px);
+        transition: 2s;
+        z-index: 10;
+      }
+    }
+    //Animation for Croissants ends here
+
+    #article-middle-section1 {
+      margin-top: 100px;
+      width: 100%;
+      height: 300px;
+      grid-column-start: 2;
+      grid-column-end: 9;
+    }
+
+    #article-middle-section2 {
+      margin-top: 200px;
+      width: 100%;
+      height: 300px;
+      grid-column-start: 10;
+      grid-column-end: 17;
+    }
+
+    #article-middle-section3 {
+      margin-top: 300px;
+      width: 100%;
+      height: 300px;
+      grid-column-start: 18;
+      grid-column-end: 25;
+    }
+  }
+  /* section 3*/
+
+  .lower-section-visit-us {
+    width: 100%;
+    margin-bottom: 30px;
+    h3 {
+      font-size: 1.5rem;
+      #span{
+        top: 20px;
+        width: 6.3rem;
+      }
+    }
+  }
+
+  .lower-section {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    margin-bottom: 10%;
+
+
+    .lower-article {
+      width: 100%;
+      grid-column-start: 13;
+      grid-column-end: 24;
+      grid-row-start: 1;
+
+      display: flex;
+      flex-direction: column;
+
+      #Hands {
+        display: block;
+      }
+    }
+
+    #bread {
+      grid-column-start: 4;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      width: 100%;
+    }
+  }
+  footer {
+    color: $primary-backgroundcolor;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    background-color: $Footer-background;
+    padding-top: 20px;
+  
+    h3 {
+      font-size: 2rem;
+      margin: 20px;
+      text-align: left;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 2;
+    }
+  
+    #footer-text {
+      margin-left: 20px;
+      text-align: left;
+      grid-column-start: 12;
+      grid-column-end: 17;
+      grid-row-start: 2;
+    }
+    input {
+      height: 30px;
+      border: none;
+      border-radius: 11px;
+      grid-column-start: 12;
+      grid-column-end: 15;
+      margin: 20px;
+      grid-row-start: 2;
+    }
+  
+    input::placeholder {
+      padding-left: 10px;
+    }
+    button {
+      height: 30px;
+      border: none;
+      border-radius: 11px;
+      grid-column-start: 15;
+      grid-column-end: 17;
+      margin: 20px;
+      grid-row-start: 2;
+    }
+  
+    #Instagram {
+      grid-column-start: 6;
+      grid-column-end: 7;
+      margin: 20px;
+      grid-row-start: 2;
+      justify-items: center;
+    }
+    #Facebook {
+      grid-column-start: 8;
+      grid-column-end: 10;
+      grid-row-start: 2;
+      margin: 20px;
+      justify-items: center;
+    }
+    #LinkedIn {
+      grid-column-start: 10;
+      grid-column-end: 12;
+      margin: 20px;
+      grid-row-start: 2;
+      justify-items: center;
+    }
+    .bottom-p {
+      margin-bottom: 10%;
+      font-style: italic;
+      text-align: center;
+      grid-column-start: 6;
+      grid-column-end: 14;
+      grid-row-start: 3;
+    }
+  }
+  
+  #cookie-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: $text;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: $black;
+    p {
+      text-align: right;
+      margin-top: 20px;
+      color: $primary-backgroundcolor;
+      width: 80%;
+    }
+  
+    button {
+      border-radius: 11px;
+      border: none;
+      color: $black;
+      background-color: $primary-backgroundcolor;
+      margin: 5px;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+}
+}
