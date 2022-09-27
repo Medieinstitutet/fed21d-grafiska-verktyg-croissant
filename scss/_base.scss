@@ -1,8 +1,5 @@
 body {
   background-color: $primary-backgroundcolor;
-  nav {
-    background-color: rgba(125, 157, 156, 0.28);
-  }
 
   #cookie-container {
     position: fixed;
@@ -22,7 +19,7 @@ body {
     button {
       border-radius: 11px;
       border: none;
-      color: $black;
+      color:$black;
       background-color: $primary-backgroundcolor;
       font-weight: bold;
     }
@@ -59,23 +56,23 @@ body {
     width: 100%;
   }
 
-  .menu-for-bigger-screen {
-    .nav-menu {
-      position: relative;
-      top: 30px;
-      display: flex;
-      list-style: none;
-      justify-content: space-between;
-      li {
-        a {
-          text-decoration: none;
-          font-family: $Montserrat;
-          color: $black;
-          font-weight: 600;
+  .menu-for-bigger-screen{ 
+    .nav-menu{
+        position: relative;
+        top: 30px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        li{
+          a{
+            text-decoration: none;
+            font-family: $Montserrat;
+            color: $black;
+            font-weight: 600;
+          }
         }
       }
     }
-  }
 
   /* section 2*/
 
