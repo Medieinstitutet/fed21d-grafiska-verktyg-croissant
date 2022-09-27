@@ -196,6 +196,7 @@ nav {
     .lower-article {
       display: grid;
       grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+      
 
       p {
         margin-top: 10px;
@@ -217,6 +218,9 @@ nav {
       grid-column-start: 2;
       grid-column-end: 9;
       margin-bottom: $spacing;
+      margin-bottom: 100px;
+      width: 100%;
+      object-fit: contain;
     }
   }
   #btnContainer,#button {

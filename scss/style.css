@@ -217,6 +217,10 @@
         grid-column-start: 2;
     grid-column-end: 9;
     margin-bottom: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   #btnContainer, #button {
     -ms-grid-column: 4;
@@ -406,7 +410,10 @@
         grid-column-start: 8;
     grid-column-end: 16;
     height: 300px;
-    width: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+    width: 100%;
   }
   #cookie-container {
     height: 50px;
@@ -965,11 +972,8 @@ body .middle-section .article-middle-section .img-container {
 }
 
 .lower-section img {
-  -o-object-fit: contain;
-     object-fit: contain;
   -o-object-position: center;
      object-position: center;
-  width: 100%;
 }
 
 .lower-section #Hands {

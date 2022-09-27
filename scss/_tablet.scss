@@ -109,7 +109,9 @@
       grid-column-start: 8;
       grid-column-end: 16;
       height: 300px;
-      width: 400px;
+      object-fit: cover;
+      height: 300px;
+      width: 100%;
     }
   }
 
