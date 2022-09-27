@@ -67,25 +67,19 @@
     }
 
     // Animation for Buns
-
     #bunsImg {
       cursor: pointer;
-      margin-top: -100px;
+      margin-top: -50px;
       position: relative;
       z-index: 10;
     }
-
-    #bunsImg:hover {
-      transform: translateY(150px);
-      transition: 3s;
+    #article-middle-section1:hover {
+      #bunsImg {
+        transform: translateY(100px);
+        transition: 2s ease-in-out;
+      }
     }
-
-    // Does not work yet //
-    #bunsImg:hover::after {
-      transform: translateY(-150px);
-      transition: 3s;
-    }
-    // Animation for BUNS ends here
+    // Animation for BunS ends here
 
     #article-middle-section3 {
       margin-top: 300px;
@@ -94,21 +88,35 @@
       grid-column-start: 18;
       grid-column-end: 25;
     }
-    //Animation for BREAD starts here
+    //Animation for Bread starts here
     #breadImg {
-      cursor: pointer;
-      margin-top: -100px;
-      position: relative;
-      z-index: 10;
-    }
-    #breadImg:hover {
-      transform: translateY(100px);
-      transition: 3s;
+      margin-top: -50px;
     }
     #article-middle-section2:hover {
       transform: translateY(-100px);
-      transition: 3s;
+      transition: 2s;
+      #breadImg {
+        transform: translateY(150px);
+        transition: 2s;
+        z-index: 10;
+      }
     }
+    //Animation for Bread ends here
+
+    //Animation for Croissants starts here
+    #croissantImg {
+      margin-top: -50px;
+    }
+    #article-middle-section3:hover {
+      transform: translateY(-100px);
+      transition: 2s;
+      #croissantImg {
+        transform: translateY(100px);
+        transition: 2s;
+        z-index: 10;
+      }
+    }
+    //Animation for Croissants ends here
   }
 
   /* section 3*/
