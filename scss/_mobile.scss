@@ -26,6 +26,7 @@
     /* section 1*/
 
     .head-section {
+      background-image: url('../assets/Imgs/Smaller-imgs/frontpage-img-640X960.webp');
       display: grid;
       grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
 
@@ -42,8 +43,6 @@
       }
 
       .logo {
-        max-height: 390px;
-        max-width: 250px;
         grid-column-start: 4;
         grid-column-end: 7;
       }
@@ -177,10 +176,10 @@ nav {
           margin: 30px;
         }
       }
-      img {
-        width: 500px;
-        height: 500px;
-      }
+      // img {
+      //   width: 500px;
+      //   height: 500px;
+      // }
     }
   
 
@@ -220,7 +219,7 @@ nav {
       margin-bottom: $spacing;
       margin-bottom: 100px;
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
   #btnContainer,#button {
