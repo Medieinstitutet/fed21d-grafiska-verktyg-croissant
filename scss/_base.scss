@@ -1,11 +1,9 @@
 body {
   background-color: $primary-backgroundcolor;
-  
-nav {
-  background-color: rgba(125, 157, 156, 0.28);
-}
 
-
+  nav {
+    background-color: rgba(125, 157, 156, 0.28);
+  }
 
   #cookie-container {
     position: fixed;
@@ -14,7 +12,7 @@ nav {
     background-color: $text;
     display: flex;
     justify-content: space-evenly;
-    z-index: 1;
+    z-index: 11;
 
     p {
       color: $primary-backgroundcolor;
@@ -25,7 +23,7 @@ nav {
     button {
       border-radius: 11px;
       border: none;
-      color:$black;
+      color: $black;
       background-color: $primary-backgroundcolor;
       font-weight: bold;
     }
@@ -62,23 +60,23 @@ nav {
     width: 100%;
   }
 
-  .menu-for-bigger-screen{ 
-    .nav-menu{
-        position: relative;
-        top: 30px;
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-        li{
-          a{
-            text-decoration: none;
-            font-family: $Montserrat;
-            color: $black;
-            font-weight: 600;
-          }
+  .menu-for-bigger-screen {
+    .nav-menu {
+      position: relative;
+      top: 30px;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      li {
+        a {
+          text-decoration: none;
+          font-family: $Montserrat;
+          color: $black;
+          font-weight: 600;
         }
       }
     }
+  }
 
   /* section 2*/
 
@@ -195,3 +193,100 @@ footer {
     filter: drop-shadow(1px 2px 2px $black);
   }
 }
+
+// .buttonEnd{
+//   cursor:pointer !important;
+// top:30%;
+// position:relative;
+//   margin-left: auto;
+// margin-right: auto;
+// width:155px;
+// height:50px;
+// border-radius:60px;
+// background:green;
+// line-height:46px;
+// text-align:center;
+// color:ivory;
+// font-weight:500;
+// overflow:hidden;
+// letter-spacing:.52px;
+// }
+// #w{
+// position:absolute;
+// text-align:center;
+// color:#e6e9ec;
+// font-weight:900;
+// left:38.5%;
+// transform:scale(1.5) translateY(100%);
+
+// }
+
+// .buttonStart{
+// cursor:pointer !important;
+// top:30%;
+// position:relative;
+//   margin-left: auto;
+// margin-right: auto;
+// width:135px;
+// height:50px;
+// border-radius:60px;
+// background:#41488f;
+// line-height:46px;
+// text-align:center;
+// color:ivory;
+// font-weight:500;
+// overflow:hidden;
+// letter-spacing:.52px;
+// }
+// .btnDis{
+// color:red;
+// top:30%;
+// position:relative;
+//   margin-left: auto;
+// margin-right: auto;
+// width:135px;
+// height:50px;
+// border-radius:60px;
+// background:red;
+// line-height:46px;
+// text-align:center;
+// color:ivory;
+// font-weight:500;
+// overflow:hidden;
+// letter-spacing:.52px;
+// }
+// ---------------
+// HTML
+// <div id="button" class="buttonStart"><span id="text">Upload</span><span id="w">✓</span></div>
+
+//Script
+// let tl = gsap.timeline({ease:'power1.in'})
+//  let __SplitText = new SplitText("#text", {type:"words,chars"})
+//  let clicked = false
+// let chars = __SplitText.chars
+// var tree = new TimelineMax();
+// let btn = document.getElementById("button")
+
+// btn.addEventListener('click',()=>{
+//   if(clicked === false){
+//     clicked = true
+//     tl.to(chars, {duration: 0.5,opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",   stagger: 0.1,repeat:0})
+//   tl.to('#button',{width:'50px',duration:0.5},{css:{className:'buttonEnd'}})
+//     tl.call(function() {
+//       btn.classList.remove('buttonStart')
+//   btn.classList.add('buttonEnd');
+// })
+//   tl.to('#w',{y:'0%',duration:0.5})
+
+//       tl.to('#w',{y:'100%',duration:0.5})
+//       tl.to('#button',{width:'135px',duration:0.5})
+// tl.to(chars, {duration: 0.5, opacity:1, scale:1, y:0, rotationX:0, transformOrigin:"0% 50% -50", stagger: 0.1,repeat:0})
+//         tl.call(function() {
+//       btn.classList.remove('buttonEnd')
+//   btn.classList.add('btnDis');
+//           btn.disable= true
+// }
+//  )
+//   }
+
+// })
