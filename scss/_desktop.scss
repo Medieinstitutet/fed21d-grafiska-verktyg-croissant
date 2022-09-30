@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
   }
+
   // codepen
   .menu-for-bigger-screen {
     z-index: 1;
@@ -82,6 +83,7 @@
   }
 
   // nav for bigger screen
+
   #menu-button {
     display: none;
   }
@@ -91,7 +93,7 @@
     width: 60%;
     li {
       a {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
       }
     }
   }
@@ -133,7 +135,7 @@
       cursor: pointer;
       margin-top: -50px;
       position: relative;
-      z-index: 10;
+      // z-index: 1;
     }
     #article-middle-section1:hover {
       #bunsImg {
@@ -143,8 +145,10 @@
     }
     // Animation for BunS ends here
     //Animation for Bread starts here
-    #bread {
+    #breadImg {
       margin-top: -50px;
+      cursor: pointer;
+      position: relative;
     }
     #article-middle-section2:hover {
       transform: translateY(-100px);
@@ -218,21 +222,29 @@
       width: 100%;
       grid-column-start: 13;
       grid-column-end: 24;
+      gap: 30px;
       grid-row-start: 1;
-
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      height: 450px;
 
       #Hands {
         display: block;
+        object-fit: cover;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-top: 15px;
+        height: 248px;
+        width: 100%;
       }
     }
 
     #bread {
       grid-column-start: 4;
+      object-fit: cover;
       grid-column-end: 13;
       grid-row-start: 1;
       width: 100%;
+      height: 100%;
     }
   }
   footer {
@@ -271,6 +283,8 @@
     input::placeholder {
       padding-left: 10px;
     }
+
+    // Subscribe button and Animation //
     button {
       height: 30px;
       border: none;
@@ -279,7 +293,39 @@
       grid-column-end: 17;
       margin: 20px;
       grid-row-start: 2;
+      cursor: pointer;
     }
+
+    .buttonStart,
+    .buttonEnd,
+    .btnDis .buttonStart {
+      cursor: pointer;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 135px;
+      height: 30px;
+      border-radius: 60px;
+      background-color: $btn-primary-backgroundcolor;
+      text-align: center;
+      color: $btn-color;
+      font-weight: bold;
+      overflow: hidden;
+
+      #w {
+        display: none;
+      }
+    }
+    .buttonStart:hover {
+      background-color: $btn-hover;
+    }
+    .buttonEnd {
+      background: #7d9d9c;
+    }
+    .btnDis {
+      background-color: $btn-disabled;
+    }
+    // Subscribe button and Animation Ends //
 
     #Instagram {
       grid-column-start: 6;
@@ -339,6 +385,7 @@
       padding-right: 10px;
       font-size: 1rem;
       font-weight: bold;
+      cursor: pointer;
     }
   }
 }

@@ -34,6 +34,9 @@
     />
     <meta name="theme-color" content="#fafafa" />
     <script src="script.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+
     <title>Croissants</title>
   </head>
   <body>
@@ -131,8 +134,9 @@
             candy canes cheesecake danish jelly beans cotton candy.
           </p>
           <article class="img-container">
-            <img
+            <img   
               src="assets/Imgs/card-img-breads.webp"
+              id="breadImg"
               alt="Bread"
               height="500"
               width="500"
@@ -217,7 +221,9 @@
       <h3>Contact</h3>
       <p id="footer-text">New bread dropping soon - subscribe here</p>
       <input type="text" placeholder="name@mail.com" />
-      <button>Subscribe</button>
+      <button id="subscribeBtn" class="buttonStart">
+        <span id="subText">Subscribe</span><span id="w">✓</span>
+      </button>
       <img
         src="assets/Imgs/Company icons/Instagram logo.svg"
         alt="Instagram"
