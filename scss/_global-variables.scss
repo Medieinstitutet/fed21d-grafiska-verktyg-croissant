@@ -21,7 +21,7 @@ $links-default: #000;
 $links-hover: #252727;
 
 // Basic colors
-$black:#000;
+$black: #000;
 $white: #fff;
 
 /* media screen font size*/
@@ -32,7 +32,6 @@ $desktop-font-size: 8rem;
 $spacing: 100px;
 
 //Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&family=Montserrat:wght@400;600&display=swap');
 $Dancing-Script: 'Dancing Script', cursive;
 $Inter: 'Inter', sans-serif;
 $Montserrat: 'Montserrat', sans-serif;
