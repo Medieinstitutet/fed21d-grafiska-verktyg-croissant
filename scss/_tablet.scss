@@ -219,36 +219,37 @@
       grid-row-start: 2;
       margin-bottom: 15px;
     }
-
+    #Instagram,
+    #Facebook,
+    #LinkedIn {
+      grid-row-start: 4;
+    }
     #Instagram {
       grid-column-start: 3;
       grid-column-end: 5;
-      grid-row-start: 4;
     }
     #Facebook {
       grid-column-start: 5;
       grid-column-end: 7;
-      grid-row-start: 4;
     }
     #LinkedIn {
       grid-column-start: 7;
       grid-column-end: 9;
-      grid-row-start: 4;
     }
-
-    input {
+    input,
+    button {
       height: 30px;
+      grid-row-start: 3;
+    }
+    input {
       grid-column-start: 10;
       grid-column-end: 16;
-      grid-row-start: 3;
       margin-right: 20px;
     }
 
     button {
-      height: 30px;
       grid-column-start: 16;
       grid-column-end: 17;
-      grid-row-start: 3;
     }
     .buttonStart,
     .buttonEnd,

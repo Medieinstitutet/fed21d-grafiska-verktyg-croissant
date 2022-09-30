@@ -30,16 +30,17 @@
       display: grid;
       grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
 
-      .h1 {
-        top: 250px;
-        font-size: 50px;
+      .h1,
+      p {
         grid-column-start: 2;
         grid-column-end: 9;
       }
+      .h1 {
+        top: 250px;
+        font-size: 3.125rem;
+      }
       p {
         top: 100px;
-        grid-column-start: 2;
-        grid-column-end: 9;
       }
 
       .logo {
@@ -47,7 +48,6 @@
         grid-column-end: 7;
       }
     }
-
     //****// Navigation and Hamburger menu //****//
     header {
       position: fixed;
@@ -66,9 +66,10 @@
         font-weight: 600;
       }
     }
+     
 
     .burgerLines {
-      background-color: black;
+      background-color: $black;
       height: 7.42px;
       width: 50px;
       display: block;
@@ -244,15 +245,16 @@
     p {
       margin: 1%;
     }
+    input,
+    button {
+      height: 30px;
+    }
     input {
       margin-right: 20px;
-      height: 30px;
       grid-column-start: 2;
       grid-column-end: 7;
     }
     button {
-      margin-bottom: 10%;
-      height: 30px;
       margin-bottom: 10%;
     }
 
