@@ -184,7 +184,17 @@
           width:20%;
           margin-left: 30px;
           margin-bottom: 50px;
-          
+          border-radius: 11px;
+          border: none;
+          color: $black;
+          background-color: $primary-backgroundcolor;
+          padding: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 1rem;
+          font-weight: bold;
           }
       }
       #Hands{
@@ -193,14 +203,8 @@
         display: block;
           }
       }
-
-  //  #Hands{
-  //   height: 250px;
-  //   width: 100%;
-  //   display: block;
-  //     }
-      }
     }
+  }
   
 
 
