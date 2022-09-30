@@ -231,6 +231,9 @@
         height: 100%;
         align-items: flex-end;
         text-align: left;
+        p,button{
+          font-family: $Montserrat;
+        }
         p{
           margin-top: 36px;
           margin-bottom: 14px;
@@ -239,11 +242,10 @@
           font-size: 1.3rem;
         }
 
-        button{
-          width:7rem;
-          margin-bottom: 20px;
+        #button{
+          width: 20%;
+          margin-bottom: 31px;
           margin-left: 30px;
-          // margin-bottom: 50px;
           border-radius: 11px;
           border: none;
           color: $black;
@@ -314,7 +316,7 @@
     button {
       height: 30px;
       border: none;
-      border-radius: 11px;
+      border-radius: 10px;
       grid-column-start: 15;
       grid-column-end: 17;
       margin: 20px;
