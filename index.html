@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <meta name="description" content="Author:Magnus,Jonas,Jenny,Anton" />
-    <meta name="description" content="Author:Magnus,Jonas,Jenny,Anton" />
     <meta property="og:title" content="Croissants" />
     <meta property="og:type" content="Website" />
 
@@ -35,6 +34,9 @@
     />
     <meta name="theme-color" content="#fafafa" />
     <script src="script.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+
     <title>Croissants</title>
   </head>
   <body>
@@ -44,7 +46,7 @@
       aria-label="main container thats includes sections and articles"
     >
       <header>
-        <button id="menu-button">
+        <button id="menu-button" aria-label="menu-button">
           <span class="burgerLines"></span>
           <span class="burgerLines"></span>
           <span class="burgerLines"></span>
@@ -55,10 +57,10 @@
           class="menu-for-bigger-screen"
           aria-label="This will only be use for bigger screens, Home, About, Contact links are here"
         >
-          <ul class="nav-menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+          <ul class="nav-menu" id="menu2">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
           </ul>
         </nav>
       </header>
@@ -87,6 +89,8 @@
           src="./assets/logo.svg"
           alt="The logo for the Bakery"
           class="logo"
+          height="390"
+          width="250"
         />
       </section>
 
@@ -109,7 +113,13 @@
             class="img-container"
             aria-label="This article contains our picture of good buns"
           >
-            <img id="bunsImg" src="assets/Imgs/card-img-buns.webp" alt="Buns" />
+            <img
+              id="bunsImg"
+              src="assets/Imgs/card-img-buns.webp"
+              alt="Buns"
+              height="500"
+              width="500"
+            />
           </article>
         </article>
 
@@ -124,7 +134,13 @@
             candy canes cheesecake danish jelly beans cotton candy.
           </p>
           <article class="img-container">
-            <img src="assets/Imgs/card-img-breads.webp" alt="Bread" />
+            <img
+              src="assets/Imgs/card-img-breads.webp"
+              id="breadImg"
+              alt="Bread"
+              height="500"
+              width="500"
+            />
           </article>
         </article>
 
@@ -142,6 +158,8 @@
               id="croissantImg"
               src="assets/Imgs/card-breads-img.webp"
               alt="Croissants"
+              height="500"
+              width="500"
             />
           </article>
         </article>
@@ -177,11 +195,17 @@
             id="Hands"
             src="assets/Imgs/footer-img-desktop.webp"
             alt="Hands"
+            height="336"
+            width="504"
           />
         </article>
-        <!-- <article class="box1"> -->
-        <img id="bread" src="assets/Imgs/footer-img-bread.webp" alt="Bread" />
-        <!-- </article> -->
+        <img
+          id="bread"
+          src="assets/Imgs/footer-img-bread.webp"
+          alt="Bread"
+          height="337"
+          width="509"
+        />
       </section>
     </main>
 
@@ -199,21 +223,29 @@
       <h3>Contact</h3>
       <p id="footer-text">New bread dropping soon - subscribe here</p>
       <input type="text" placeholder="name@mail.com" />
-      <button>Subscribe</button>
+      <button id="subscribeBtn" class="buttonStart">
+        <span id="subText">Subscribe</span><span id="w">✓</span>
+      </button>
       <img
         src="assets/Imgs/Company icons/Instagram logo.svg"
         alt="Instagram"
         id="Instagram"
+        height="37"
+        width="37"
       />
       <img
         src="assets/Imgs/Company icons/Facebook logo.svg"
         alt="Facebook"
         id="Facebook"
+        height="45"
+        width="37"
       />
       <img
         src="assets/Imgs/Company icons/Linkedin logo.svg"
         alt="LinkedIn"
         id="LinkedIn"
+        height="37"
+        width="37"
       />
       <p class="bottom-p">@copyright bakery croissants - 2022</p>
     </footer>

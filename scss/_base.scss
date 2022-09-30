@@ -1,11 +1,10 @@
 body {
   background-color: $primary-backgroundcolor;
-  
-nav {
-  background-color: rgba(125, 157, 156, 0.28);
-}
 
 
+  nav {
+    background-color: rgba(125, 157, 156, 0.28);
+  }
 
   #cookie-container {
     position: fixed;
@@ -14,7 +13,7 @@ nav {
     background-color: $text;
     display: flex;
     justify-content: space-evenly;
-    z-index: 1;
+    z-index: 11;
 
     p {
       color: $primary-backgroundcolor;
@@ -25,7 +24,7 @@ nav {
     button {
       border-radius: 11px;
       border: none;
-      color:$black;
+      color: $black;
       background-color: $primary-backgroundcolor;
       font-weight: bold;
     }
@@ -51,7 +50,6 @@ nav {
       font-weight: 600;
     }
 
-    background-image: url('../assets/Imgs/fronpage-img.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -62,23 +60,23 @@ nav {
     width: 100%;
   }
 
-  .menu-for-bigger-screen{ 
-    .nav-menu{
-        position: relative;
-        top: 30px;
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-        li{
-          a{
-            text-decoration: none;
-            font-family: $Montserrat;
-            color: $black;
-            font-weight: 600;
-          }
+  .menu-for-bigger-screen {
+    .nav-menu {
+      position: relative;
+      top: 30px;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      li {
+        a {
+          text-decoration: none;
+          font-family: $Montserrat;
+          color: $black;
+          font-weight: 600;
         }
       }
     }
+  }
 
   /* section 2*/
 
