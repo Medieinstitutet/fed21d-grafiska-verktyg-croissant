@@ -146,7 +146,6 @@
     height: 100vh;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-
     z-index: 2;
     top: 0;
     left: 0;
@@ -171,11 +170,9 @@
       border-radius: 30px;
       grid-column-start: 2;
       grid-column-end: 9;
-
       h2 {
         margin-top: 30px;
       }
-
       .img-container {
         height: 200px;
       }
@@ -203,18 +200,21 @@
       grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
 
       p {
+        text-align: center;
         margin-top: 10px;
         grid-column-start: 2;
         grid-column-end: 9;
       }
       button {
+        border-radius: 5px;
         grid-column-start: 4;
         grid-column-end: 7;
         margin-bottom: 10px;
         margin-top: 10px;
         height: 80;
-        font-size: 1.5rem;
         margin-bottom: 50px;
+        font-size: 1.5rem;
+        font-family: $Inter;
       }
     }
 
@@ -226,17 +226,6 @@
       width: 100%;
       object-fit: cover;
     }
-  }
-  #btnContainer,
-  #button {
-    grid-column-start: 4;
-    grid-column-end: 7;
-  }
-  #button {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    height: 80;
-    font-size: 1.5rem;
   }
 
   /* Footer*/

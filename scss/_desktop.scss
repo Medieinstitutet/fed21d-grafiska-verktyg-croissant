@@ -210,40 +210,69 @@
     }
   }
 
-  .lower-section {
-    display: grid;
-    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-    margin-bottom: 10%;
+ /*here starts the container in section 3*/
+ 
+    .lower-section {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 10%;
+      display:flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      height: 500px;
 
-    .lower-article {
-      width: 100%;
-      grid-column-start: 13;
-      grid-column-end: 24;
-      gap: 30px;
-      grid-row-start: 1;
-      display: grid;
-      height: 450px;
+    .lower-article{
+        width: 50%;
+        height: 50%;
+        flex-direction: column;
+        height: 100%;
+        align-items: flex-end;
+        text-align: left;
+        p,button{
+          font-family: $Montserrat;
+        }
+        p{
+          margin-top: 36px;
+          margin-bottom: 14px;
+          text-align: left;
+          margin-left: 30px;
+          font-size: 1.3rem;
+        }
+        
 
-      #Hands {
-        display: block;
-        object-fit: cover;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        margin-top: 15px;
-        height: 248px;
-        width: 100%;
-      }
-    }
+        #button{
+          width: 20%;
+          margin-bottom: 31px;
+          margin-left: 30px;
+          border-radius: 11px;
+          border: none;
+          color: $black;
+          background-color: $primary-backgroundcolor;
+          padding: 6px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 1rem;
+          font-weight: bold;
+          }
 
-    #bread {
-      grid-column-start: 4;
-      object-fit: cover;
-      grid-column-end: 13;
-      grid-row-start: 1;
-      width: 100%;
-      height: 100%;
-    }
-  }
+          #Hands{
+            height: 51%;
+            width: 100%;
+            display: block;
+              }
+            }
+
+            img{
+              object-fit: cover;
+              height: 100%;
+              width: 50%;
+              }
+          }
+
+/*here starts the footer*/
+
   footer {
     color: $primary-backgroundcolor;
     display: grid;
@@ -285,7 +314,7 @@
     button {
       height: 30px;
       border: none;
-      border-radius: 11px;
+      border-radius: 10px;
       grid-column-start: 15;
       grid-column-end: 17;
       margin: 20px;
@@ -378,5 +407,6 @@
       font-weight: bold;
       cursor: pointer;
     }
-  }
+}
+
 }
