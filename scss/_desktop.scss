@@ -1,22 +1,19 @@
 @media only screen and (min-width: 1001px) {
   nav {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
     height: 80px;
-    display: flex;
-    justify-content: center;
   }
 
-  // codepen
+  nav,
+
   .menu-for-bigger-screen {
     z-index: 1;
     position: fixed;
     width: 100%;
-    // height: 80px;
     display: flex;
     justify-content: center;
-
+  }
+  // codepen
+  .menu-for-bigger-screen {
     .nav-menu {
       height: 100%;
       width: 60%;
@@ -33,7 +30,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: rgb(0, 0, 0);
+        color: $black;
         text-transform: uppercase;
         transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
         text-align: center;
@@ -104,18 +101,18 @@
     display: grid;
     grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
 
+    h1,
+    p {
+      grid-column-start: 6;
+      grid-column-end: 21;
+    }
     h1 {
       top: 250px;
       font-size: 6.25rem;
-      grid-column-start: 6;
-      grid-column-end: 21;
     }
     p {
       top: 100px;
-      grid-column-start: 6;
-      grid-column-end: 21;
     }
-
     img {
       width: 100%;
       grid-column-start: 12;
@@ -296,6 +293,7 @@
       cursor: pointer;
     }
 
+
     .buttonStart,
     .buttonEnd,
     .btnDis .buttonStart {
@@ -327,26 +325,18 @@
     }
     // Subscribe button and Animation Ends //
 
+
     #Instagram {
       grid-column-start: 6;
       grid-column-end: 7;
-      margin: 20px;
-      grid-row-start: 2;
-      justify-items: center;
     }
     #Facebook {
       grid-column-start: 8;
       grid-column-end: 10;
-      grid-row-start: 2;
-      margin: 20px;
-      justify-items: center;
     }
     #LinkedIn {
       grid-column-start: 10;
       grid-column-end: 12;
-      margin: 20px;
-      grid-row-start: 2;
-      justify-items: center;
     }
     .bottom-p {
       margin-bottom: 10%;
