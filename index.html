@@ -35,8 +35,8 @@
     />
     <meta name="theme-color" content="#fafafa" />
     <script src="script.js" defer></script>
-    <!-- GSAP -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
 
     <title>Croissants</title>
   </head>
@@ -198,7 +198,9 @@
       <h3>Contact</h3>
       <p id="footer-text">New bread dropping soon - subscribe here</p>
       <input type="text" placeholder="name@mail.com" />
-      <button>Subscribe</button>
+      <button id="subscribeBtn" class="buttonStart">
+        <span id="subText">Subscribe</span><span id="w">✓</span>
+      </button>
       <img
         src="assets/Imgs/Company icons/Instagram logo.svg"
         alt="Instagram"

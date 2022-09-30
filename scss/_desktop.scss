@@ -58,7 +58,7 @@
       cursor: pointer;
       margin-top: -50px;
       position: relative;
-      z-index: 10;
+      // z-index: 1;
     }
     #article-middle-section1:hover {
       #bunsImg {
@@ -76,9 +76,9 @@
       transform: translateY(-100px);
       transition: 2s;
       #breadImg {
-        transform: translateY(150px);
+        transform: translateY(-150px);
         transition: 2s;
-        z-index: 10;
+        z-index: 1;
       }
     }
     //Animation for Bread ends here
@@ -205,6 +205,8 @@
     input::placeholder {
       padding-left: 10px;
     }
+
+    // Subscribe button and Animation //
     button {
       height: 30px;
       border: none;
@@ -213,7 +215,40 @@
       grid-column-end: 17;
       margin: 20px;
       grid-row-start: 2;
+      cursor: pointer;
     }
+
+    .buttonStart,
+    .buttonEnd,
+    .btnDis .buttonStart {
+      cursor: pointer;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 135px;
+      height: 30px;
+      border-radius: 60px;
+      background-color: #fff5e5;
+      text-align: center;
+      color: #252727;
+      font-weight: bold;
+      overflow: hidden;
+      letter-spacing: 0.52px;
+
+      #w {
+        display: none;
+      }
+    }
+    .buttonStart:hover {
+      background-color: #e4dccf;
+    }
+    .buttonEnd {
+      background: #7d9d9c;
+    }
+    .btnDis {
+      background-color: #858585;
+    }
+    // Subscribe button and Animation Ends //
 
     #Instagram {
       grid-column-start: 6;
@@ -273,6 +308,7 @@
       padding-right: 10px;
       font-size: 1rem;
       font-weight: bold;
+      cursor: pointer;
     }
   }
 }
