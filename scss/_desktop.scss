@@ -140,39 +140,20 @@
     .lower-section {
       margin-bottom: 10%;
       display:flex;
-      justify-content: center;
       flex-direction: row-reverse;
-      align-content: stretch;
-
-      // .flex-container{
-      //  display:flex;
-      //  justify-content: center;
-      //  flex-direction: row-reverse;
-      //  align-content: stretch;
-               
-     .box1{
-     width: 500px;
-     height: 500px;
-   
-     img{
-      object-fit: cover;
+      justify-content: center;
+      // justify-items: center;
       width: 100%;
-      height: 100%;
-      }
-     }
-
-     .box2{
-     width: 500px;
-     height: 500px;
-
-        
+      height: 500px;
+      background-color: red;
 
     .lower-article{
-        width: 100%;
-        display: flex;
+        width: 50%;
+        height: 50%;
         flex-direction: column;
-        height: 60%;
-       text-align: left;
+        height: 100%;
+        align-items: flex-end;
+        text-align: left;
         p{
           margin-top: 50px;
           margin-bottom: 50px;
@@ -183,12 +164,12 @@
         button{
           width:20%;
           margin-left: 30px;
-          margin-bottom: 50px;
+          // margin-bottom: 50px;
           border-radius: 11px;
           border: none;
           color: $black;
           background-color: $primary-backgroundcolor;
-          padding: 5px;
+          padding: 6px;
           padding-left: 10px;
           padding-right: 10px;
           padding-top: 10px;
@@ -196,15 +177,22 @@
           font-size: 1rem;
           font-weight: bold;
           }
-      }
-      #Hands{
-        height: 40%;
-        width: 100%;
-        display: block;
+
+          #Hands{
+            height: 51%;
+            width: 100%;
+            display: block;
+              }
+            }
+
+            img{
+              object-fit: cover;
+              height: 100%;
+              width: 50%;
+              }
           }
-      }
-    }
-  }
+
+
   
 
 
@@ -317,3 +305,4 @@
     }
 }
 
+}
