@@ -642,20 +642,45 @@
     top: 20px;
     width: 6.3rem;
   }
+  /*here starts the container in section 3*/
   .lower-section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
     margin-bottom: 10%;
   }
-  .lower-section .lower-article {
+  .lower-section .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .lower-section .flex-container .box1 {
+    width: 500px;
+    height: 500px;
+  }
+  .lower-section .flex-container .box1 img {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
-    -ms-grid-column: 13;
-        grid-column-start: 13;
-    grid-column-end: 24;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
+    height: 100%;
+  }
+  .lower-section .flex-container .box2 {
+    width: 500px;
+    height: 500px;
+  }
+  .lower-section .flex-container .box2 .upper-box2 {
+    height: 60%;
+    text-align: left;
+  }
+  .lower-section .flex-container .box2 .upper-box2 .lower-article {
+    height: 400px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -664,148 +689,170 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .lower-section .lower-article #Hands {
+  .lower-section .flex-container .box2 .upper-box2 .lower-article p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    margin-left: 30px;
+  }
+  .lower-section .flex-container .box2 .upper-box2 .lower-article button {
+    width: 20%;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .lower-section .flex-container .box2 #Hands {
+    height: 40%;
+    width: 100%;
     display: block;
   }
-  .lower-section #bread {
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    grid-column-end: 13;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    width: 100%;
-  }
-  footer {
-    color: #f0ebe3;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-    background-color: #576f72;
-    padding-top: 20px;
-  }
-  footer h3 {
-    font-size: 2rem;
-    margin: 20px;
-    text-align: left;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 6;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-  }
-  footer #footer-text {
-    margin-left: 20px;
-    text-align: left;
-    -ms-grid-column: 12;
-        grid-column-start: 12;
-    grid-column-end: 17;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-  }
-  footer input {
-    height: 30px;
-    border: none;
-    border-radius: 11px;
-    -ms-grid-column: 12;
-        grid-column-start: 12;
-    grid-column-end: 15;
-    margin: 20px;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-  }
-  footer input::-webkit-input-placeholder {
-    padding-left: 10px;
-  }
-  footer input:-ms-input-placeholder {
-    padding-left: 10px;
-  }
-  footer input::-ms-input-placeholder {
-    padding-left: 10px;
-  }
-  footer input::placeholder {
-    padding-left: 10px;
-  }
-  footer button {
-    height: 30px;
-    border: none;
-    border-radius: 11px;
-    -ms-grid-column: 15;
-        grid-column-start: 15;
-    grid-column-end: 17;
-    margin: 20px;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-  }
-  footer #Instagram {
-    -ms-grid-column: 6;
-        grid-column-start: 6;
-    grid-column-end: 7;
-    margin: 20px;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    justify-items: center;
-  }
-  footer #Facebook {
-    -ms-grid-column: 8;
-        grid-column-start: 8;
-    grid-column-end: 10;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    margin: 20px;
-    justify-items: center;
-  }
-  footer #LinkedIn {
-    -ms-grid-column: 10;
-        grid-column-start: 10;
-    grid-column-end: 12;
-    margin: 20px;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    justify-items: center;
-  }
-  footer .bottom-p {
-    margin-bottom: 10%;
-    font-style: italic;
-    text-align: center;
-    -ms-grid-column: 6;
-        grid-column-start: 6;
-    grid-column-end: 14;
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-  }
-  #cookie-container {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    background-color: #252727;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    height: 50px;
-    background-color: #000;
-  }
-  #cookie-container p {
-    text-align: right;
-    margin-top: 20px;
-    color: #f0ebe3;
-    width: 80%;
-  }
-  #cookie-container button {
-    border-radius: 11px;
-    border: none;
-    color: #000;
-    background-color: #f0ebe3;
-    margin: 5px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-  }
+}
+
+/*footer*/
+footer {
+  color: #f0ebe3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+      grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+  background-color: #576f72;
+  padding-top: 20px;
+}
+
+footer h3 {
+  font-size: 2rem;
+  margin: 20px;
+  text-align: left;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+footer #footer-text {
+  margin-left: 20px;
+  text-align: left;
+  -ms-grid-column: 12;
+      grid-column-start: 12;
+  grid-column-end: 17;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+footer input {
+  height: 30px;
+  border: none;
+  border-radius: 11px;
+  -ms-grid-column: 12;
+      grid-column-start: 12;
+  grid-column-end: 15;
+  margin: 20px;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+footer input::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+footer input:-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+footer input::-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+footer input::placeholder {
+  padding-left: 10px;
+}
+
+footer button {
+  height: 30px;
+  border: none;
+  border-radius: 11px;
+  -ms-grid-column: 15;
+      grid-column-start: 15;
+  grid-column-end: 17;
+  margin: 20px;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+footer #Instagram {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 7;
+  margin: 20px;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  justify-items: center;
+}
+
+footer #Facebook {
+  -ms-grid-column: 8;
+      grid-column-start: 8;
+  grid-column-end: 10;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  margin: 20px;
+  justify-items: center;
+}
+
+footer #LinkedIn {
+  -ms-grid-column: 10;
+      grid-column-start: 10;
+  grid-column-end: 12;
+  margin: 20px;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  justify-items: center;
+}
+
+footer .bottom-p {
+  margin-bottom: 10%;
+  font-style: italic;
+  text-align: center;
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 14;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+}
+
+#cookie-container {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #252727;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 50px;
+  background-color: #000;
+}
+
+#cookie-container p {
+  text-align: right;
+  margin-top: 20px;
+  color: #f0ebe3;
+  width: 80%;
+}
+
+#cookie-container button {
+  border-radius: 11px;
+  border: none;
+  color: #000;
+  background-color: #f0ebe3;
+  margin: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 /* Cards*/
