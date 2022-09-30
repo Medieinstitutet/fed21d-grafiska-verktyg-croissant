@@ -248,6 +248,36 @@
       grid-column-start: 16;
       grid-column-end: 17;
     }
+    .buttonStart,
+    .buttonEnd,
+    .btnDis .buttonStart {
+      cursor: pointer;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 135px;
+      height: 30px;
+      border-radius: 60px;
+      background-color: $btn-primary-backgroundcolor;
+      text-align: center;
+      color: $btn-color;
+      font-weight: bold;
+      overflow: hidden;
+
+      #w {
+        display: none;
+      }
+    }
+    .buttonStart:hover {
+      background-color: $btn-hover;
+    }
+    .buttonEnd {
+      background: #7d9d9c;
+    }
+    .btnDis {
+      background-color: $btn-disabled;
+    }
+    // Subscribe button and Animation Ends //
 
     .bottom-p {
       font-style: italic;

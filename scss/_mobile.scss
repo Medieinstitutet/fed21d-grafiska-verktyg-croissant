@@ -66,8 +66,9 @@
         font-weight: 600;
       }
     }
+     
 
-    span {
+    .burgerLines {
       background-color: $black;
       height: 7.42px;
       width: 50px;
@@ -266,6 +267,37 @@
     }
     button {
       margin-bottom: 10%;
+    }
+
+    // Subscribe button and Animation //
+    .buttonStart,
+    .buttonEnd,
+    .btnDis .buttonStart {
+      cursor: pointer;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 102px;
+      height: 30px;
+      background-color: $btn-primary-backgroundcolor;
+      text-align: center;
+      color: $btn-color;
+      font-weight: bold;
+      overflow: hidden;
+
+      #w {
+        display: none;
+      }
+    }
+    .buttonStart:hover {
+      background-color: $btn-hover;
+    }
+    .buttonEnd {
+      background: #7d9d9c;
+    }
+    .btnDis {
+      width: 102px;
+      background-color: $btn-disabled;
     }
 
     //  icons
