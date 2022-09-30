@@ -4,7 +4,6 @@
   }
 
   nav,
-
   .menu-for-bigger-screen {
     z-index: 1;
     position: fixed;
@@ -21,6 +20,7 @@
       align-items: center;
       list-style: none;
       li {
+        cursor: pointer;
         display: block;
         height: 60%;
         font-size: 1.5rem;
@@ -160,6 +160,7 @@
     //Animation for Croissants starts here
     #croissantImg {
       margin-top: -50px;
+      cursor: pointer;
     }
     #article-middle-section3:hover {
       transform: translateY(-100px);
@@ -241,6 +242,7 @@
         
 
         #button{
+          cursor: pointer;
           width: 20%;
           margin-bottom: 31px;
           margin-left: 30px;
@@ -395,6 +397,7 @@
     }
 
     button {
+      cursor: pointer;
       border-radius: 11px;
       border: none;
       color: $black;

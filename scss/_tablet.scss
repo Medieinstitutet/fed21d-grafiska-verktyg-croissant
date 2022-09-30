@@ -20,6 +20,7 @@
       // padding: 0 100px;
 
       li {
+        cursor: pointer;
         display: block;
         height: 60%;
         font-size: 1.5rem;
@@ -169,6 +170,7 @@
         grid-column-end: 4;
       }
       button {
+        cursor: pointer;
         border-radius: 10px;
         grid-column-start: 2;
         margin-left: 10px;
@@ -194,6 +196,7 @@
       margin-top: 20px;
     }
     button {
+      cursor: pointer;
       margin: 5px;
       padding: 5px;
       padding-left: 10px;
