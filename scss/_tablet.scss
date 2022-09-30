@@ -256,9 +256,9 @@
       width: 135px;
       height: 30px;
       border-radius: 60px;
-      background-color: #fff5e5;
+      background-color: $btn-primary-backgroundcolor;
       text-align: center;
-      color: #252727;
+      color: $btn-color;
       font-weight: bold;
       overflow: hidden;
 
@@ -267,13 +267,13 @@
       }
     }
     .buttonStart:hover {
-      background-color: #e4dccf;
+      background-color: $btn-hover;
     }
     .buttonEnd {
       background: #7d9d9c;
     }
     .btnDis {
-      background-color: #858585;
+      background-color: $btn-disabled;
     }
     // Subscribe button and Animation Ends //
 

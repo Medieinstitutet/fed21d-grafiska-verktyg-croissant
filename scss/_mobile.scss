@@ -108,7 +108,7 @@
     }
     .menu-open :nth-child(2) {
       margin-top: 15px;
-      background-color: black;
+      background-color: $black;
       -webkit-transform: rotate(-45deg);
       transform: rotate(45deg);
       margin-top: 15;
@@ -117,7 +117,7 @@
   }
 
   .menu-open :nth-child(3) {
-    background-color: black;
+    background-color: $black;
     -webkit-transform: rotate(-45deg);
     transform-origin: 10px;
   }
@@ -129,7 +129,7 @@
   nav ul li a {
     text-decoration: none;
     font-size: 40px;
-    color: black;
+    color: $black;
     letter-spacing: 2px;
     position: relative;
   }
@@ -278,10 +278,9 @@
       margin-right: auto;
       width: 102px;
       height: 30px;
-      border-radius: 60px;
-      background-color: #fff5e5;
+      background-color: $btn-primary-backgroundcolor;
       text-align: center;
-      color: #252727;
+      color: $btn-color;
       font-weight: bold;
       overflow: hidden;
 
@@ -290,14 +289,14 @@
       }
     }
     .buttonStart:hover {
-      background-color: #e4dccf;
+      background-color: $btn-hover;
     }
     .buttonEnd {
       background: #7d9d9c;
     }
     .btnDis {
       width: 102px;
-      background-color: #858585;
+      background-color: $btn-disabled;
     }
 
     //  icons
