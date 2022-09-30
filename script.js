@@ -31,7 +31,11 @@ btn.addEventListener('click', () => {
     tl.to('#w', { y: '0%', duration: 0.5 });
 
     tl.to('#w', { y: '100%', duration: 0.5 });
-    tl.to('#subscribeBtn', { width: '135px', duration: 0.5 });
+    if (window.matchMedia('(max-width: 550px)').matches) {
+      tl.to('#subscribeBtn', { width: '102px', duration: 0.5 });
+    } else {
+      tl.to('#subscribeBtn', { width: '135px', duration: 0.5 });
+    }
     tl.call(function () {
       btn.classList.remove('buttonEnd');
       btn.classList.add('btnDis');

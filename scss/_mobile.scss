@@ -50,19 +50,25 @@
     }
 
     //****// Navigation and Hamburger menu //****//
-
+    header {
+      position: fixed;
+      z-index: 1;
+      background-color: rgba(125, 157, 156, 0.28);
+      width: 100%;
+      height: 80px;
+    }
     .nav-menu {
       width: 100%;
       flex-direction: column;
       justify-content: center;
       li {
-        a {
-          font-size: 2rem;
-        }
+        font-family: $Montserrat;
+        font-size: 2rem;
+        font-weight: 600;
       }
     }
 
-    span {
+    .burgerLines {
       background-color: black;
       height: 7.42px;
       width: 50px;
@@ -71,6 +77,7 @@
       border-radius: 4px;
       position: relative;
     }
+
     #menu-button {
       border: none;
       position: fixed;
@@ -80,6 +87,7 @@
       cursor: pointer;
       margin-top: 20px;
     }
+
     .menu-open {
       border: none;
       position: fixed;
@@ -258,6 +266,38 @@
       margin-bottom: 10%;
       height: 30px;
       margin-bottom: 10%;
+    }
+
+    // Subscribe button and Animation //
+    .buttonStart,
+    .buttonEnd,
+    .btnDis .buttonStart {
+      cursor: pointer;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 102px;
+      height: 30px;
+      border-radius: 60px;
+      background-color: #fff5e5;
+      text-align: center;
+      color: #252727;
+      font-weight: bold;
+      overflow: hidden;
+
+      #w {
+        display: none;
+      }
+    }
+    .buttonStart:hover {
+      background-color: #e4dccf;
+    }
+    .buttonEnd {
+      background: #7d9d9c;
+    }
+    .btnDis {
+      width: 102px;
+      background-color: #858585;
     }
 
     //  icons
