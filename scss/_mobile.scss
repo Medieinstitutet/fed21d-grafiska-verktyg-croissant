@@ -26,163 +26,165 @@
     /* section 1*/
 
     .head-section {
+      background-image: url('../assets/Imgs/Smaller-imgs/frontpage-img-640X960.webp');
       display: grid;
       grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
 
-      .h1 {
-        top: 250px;
-        font-size: 50px;
+      .h1,
+      p {
         grid-column-start: 2;
         grid-column-end: 9;
+      }
+      .h1 {
+        top: 250px;
+        font-size: 3.125rem;
       }
       p {
         top: 100px;
-        grid-column-start: 2;
-        grid-column-end: 9;
       }
 
       .logo {
-        max-height: 390px;
-        max-width: 250px;
         grid-column-start: 4;
         grid-column-end: 7;
       }
     }
-
-//****// Navigation and Hamburger menu //****//
-
-.nav-menu {
-  width:100%;
-  flex-direction: column;
-  justify-content: center;
-  li{
-    a{
-      font-size: 2rem;
+    //****// Navigation and Hamburger menu //****//
+    header {
+      position: fixed;
+      z-index: 1;
+      background-color: rgba(125, 157, 156, 0.28);
+      width: 100%;
+      height: 80px;
     }
-  }
-}
-
-  span {
-   background-color: black;
-   height: 7.42px;
-   width: 50px;
-   display: block;
-   margin: 5px;
-   border-radius: 4px;
-   position: relative;
-  }
-  #menu-button {
-   border: none;
-   position: fixed;
-   right: 20px;
-   z-index: 998;
-   background-color: rgba(255, 255, 255, 0);
-   cursor: pointer;
-   margin-top: 20px;
-  }
-  .menu-open {
-   border: none;
-   position: fixed;
-   top: 5px;
-   right: 20px;
-   z-index: 998;
-   background-color: rgba(255, 255, 255, 0);
-   cursor: pointer;
-   margin-top: 10px;
-  }
-
-  .menu-open ~ nav {
-   display: block;
-  }
-
-.menu-open :first-child {
-   display: none;
-  }
-  .menu-open :nth-child(2) {
-   margin-top: 15px;
-   background-color: black;
-   -webkit-transform: rotate(-45deg);
-   transform: rotate(45deg);
-   margin-top: 15;
-   margin-left: 1;
-  }
- }
-
- .menu-open :nth-child(3) {
-  background-color: black;
-  -webkit-transform: rotate(-45deg);
-  transform-origin: 10px;
- }
-
-
-nav ul li {
- list-style: none;
- margin: 35px;
-}
-nav ul li a {
- text-decoration: none;
- font-size: 40px;
- color: black;
- letter-spacing: 2px;
- position: relative;
-}
-nav ul li a::after {
- content: '';
- height: 3px;
- width: 0;
- position: absolute;
-}
-
-nav {
- position: fixed;
- width: 100%;
- height: 100vh;
- background: rgba(255, 255, 255, 0.8);
- backdrop-filter: blur(10px);
-
- z-index: 2;
- top: 0;
- left: 0;
- display: flex;
- align-items: center;
- justify-content: center;
- text-align: center;
- display: none;
- padding-top: 100px;
-}
-
-//****// Nav and Hamburger Menu ENDS // ****//
-
-
-    /* section 2*/
-
-    .middle-section {
-      display: grid;
-      grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-
-      .article-middle-section {
-        margin-top: $spacing;
-        border-radius: 30px;
-        grid-column-start: 2;
-        grid-column-end: 9;
-
-        h2 {
-          margin-top: 30px;
-        }
-
-        .img-container {
-          height: 200px;
-        }
-        .article-middle-section-p {
-          margin: 30px;
-        }
-      }
-      img {
-        width: 500px;
-        height: 500px;
+    .nav-menu {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      li {
+        font-family: $Montserrat;
+        font-size: 2rem;
+        font-weight: 600;
       }
     }
-  
+     
+
+    .burgerLines {
+      background-color: $black;
+      height: 7.42px;
+      width: 50px;
+      display: block;
+      margin: 5px;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    #menu-button {
+      border: none;
+      position: fixed;
+      right: 20px;
+      z-index: 998;
+      background-color: rgba(255, 255, 255, 0);
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .menu-open {
+      border: none;
+      position: fixed;
+      top: 5px;
+      right: 20px;
+      z-index: 998;
+      background-color: rgba(255, 255, 255, 0);
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .menu-open ~ nav {
+      display: block;
+    }
+
+    .menu-open :first-child {
+      display: none;
+    }
+    .menu-open :nth-child(2) {
+      margin-top: 15px;
+      background-color: $black;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(45deg);
+      margin-top: 15;
+      margin-left: 1;
+    }
+  }
+
+  .menu-open :nth-child(3) {
+    background-color: $black;
+    -webkit-transform: rotate(-45deg);
+    transform-origin: 10px;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 35px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 40px;
+    color: $black;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  nav ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    padding-top: 100px;
+  }
+
+  //****// Nav and Hamburger Menu ENDS // ****//
+
+  /* section 2*/
+
+  .middle-section {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+
+    .article-middle-section {
+      margin-top: $spacing;
+      border-radius: 30px;
+      grid-column-start: 2;
+      grid-column-end: 9;
+      h2 {
+        margin-top: 30px;
+      }
+      .img-container {
+        height: 200px;
+      }
+      .article-middle-section-p {
+        margin: 30px;
+      }
+    }
+    img {
+      width: 500px;
+      height: 500px;
+    }
+  }
 
   /* section 3*/
   .lower-section-visit-us {
@@ -196,21 +198,23 @@ nav {
     .lower-article {
       display: grid;
       grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-      
 
       p {
+        text-align: center;
         margin-top: 10px;
         grid-column-start: 2;
         grid-column-end: 9;
       }
       button {
+        border-radius: 5px;
         grid-column-start: 4;
         grid-column-end: 7;
         margin-bottom: 10px;
         margin-top: 10px;
         height: 80;
-        font-size: 1.5rem;
         margin-bottom: 50px;
+        font-size: 1.5rem;
+        font-family: $Inter;
       }
     }
 
@@ -220,18 +224,8 @@ nav {
       margin-bottom: $spacing;
       margin-bottom: 100px;
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
-  }
-  #btnContainer,#button {
-    grid-column-start: 4;
-    grid-column-end: 7;
-  }
-  #button {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    height: 80;
-    font-size: 1.5rem;
   }
 
   /* Footer*/
@@ -239,27 +233,60 @@ nav {
   footer {
     display: grid;
     grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-    h3,p {
+    h3,
+    p {
       grid-column-start: 2;
       grid-column-end: 9;
     }
-    h3{
+    h3 {
       font-size: 2rem;
       margin: 20px;
     }
     p {
       margin: 1%;
     }
+    input,
+    button {
+      height: 30px;
+    }
     input {
       margin-right: 20px;
-      height: 30px;
       grid-column-start: 2;
       grid-column-end: 7;
     }
     button {
       margin-bottom: 10%;
+    }
+
+    // Subscribe button and Animation //
+    .buttonStart,
+    .buttonEnd,
+    .btnDis .buttonStart {
+      cursor: pointer;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 102px;
       height: 30px;
-      margin-bottom: 10%;
+      background-color: $btn-primary-backgroundcolor;
+      text-align: center;
+      color: $btn-color;
+      font-weight: bold;
+      overflow: hidden;
+
+      #w {
+        display: none;
+      }
+    }
+    .buttonStart:hover {
+      background-color: $btn-hover;
+    }
+    .buttonEnd {
+      background: #7d9d9c;
+    }
+    .btnDis {
+      width: 102px;
+      background-color: $btn-disabled;
     }
 
     //  icons
@@ -272,7 +299,8 @@ nav {
       grid-column-start: 5;
       grid-column-end: 7;
     }
-    #LinkedIn,button {
+    #LinkedIn,
+    button {
       grid-column-start: 7;
       grid-column-end: 9;
     }
