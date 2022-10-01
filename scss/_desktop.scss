@@ -126,13 +126,19 @@
     display: grid;
     grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
     margin-bottom: 10%;
+    h2 {
+      margin-bottom: -2rem;
+    }
 
     // Animation for Buns
+    #bunsText {
+      margin-top: 7.9rem;
+      margin-bottom: -3rem;
+    }
     #bunsImg {
       cursor: pointer;
       margin-top: -50px;
       position: relative;
-      // z-index: 1;
     }
     #article-middle-section1:hover {
       #bunsImg {
@@ -142,6 +148,11 @@
     }
     // Animation for BunS ends here
     //Animation for Bread starts here
+
+    #breadText {
+      margin-top: 7rem;
+      margin-bottom: -2.3rem;
+    }
     #breadImg {
       margin-top: -50px;
       cursor: pointer;
@@ -158,8 +169,12 @@
     }
     //Animation for Bread ends here
     //Animation for Croissants starts here
+    #CroissantText {
+      margin-top: 7rem;
+      margin-bottom: -3rem;
+    }
     #croissantImg {
-      margin-top: -50px;
+      margin-top: -2.3rem;
       cursor: pointer;
     }
     #article-middle-section3:hover {
