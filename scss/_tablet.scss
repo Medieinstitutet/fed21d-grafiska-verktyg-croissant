@@ -159,11 +159,12 @@
       grid-column-end: 8;
       min-width: 200px;
       height: 300px;
-      p,button{
+      p,
+      button {
         text-align: center;
         font-family: $Montserrat;
       }
-      p{
+      p {
         margin-top: 10px;
         margin-left: 20px;
         grid-column-start: 1;
@@ -261,7 +262,7 @@
       position: relative;
       margin-left: auto;
       margin-right: auto;
-      width: 135px;
+      width: 102px;
       height: 30px;
       border-radius: 60px;
       background-color: $btn-primary-backgroundcolor;
