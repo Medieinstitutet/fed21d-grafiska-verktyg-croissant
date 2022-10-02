@@ -66,7 +66,6 @@
         font-weight: 600;
       }
     }
-     
 
     .burgerLines {
       background-color: $black;
@@ -200,6 +199,7 @@
       grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
 
       p {
+        font-family: $Montserrat;
         text-align: center;
         margin-top: 10px;
         grid-column-start: 2;
@@ -285,7 +285,8 @@
       background: #7d9d9c;
     }
     .btnDis {
-      width: 102px;
+      margin-left: 6px;
+
       background-color: $btn-disabled;
     }
 

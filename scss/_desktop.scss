@@ -107,7 +107,7 @@
       grid-column-end: 21;
     }
     h1 {
-      top: 250px;
+      top: 70%;
       font-size: 6.25rem;
     }
     p {
@@ -126,13 +126,19 @@
     display: grid;
     grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
     margin-bottom: 10%;
+    h2 {
+      margin-bottom: -2rem;
+    }
 
     // Animation for Buns
+    #bunsText {
+      margin-top: 7.9rem;
+      margin-bottom: -3rem;
+    }
     #bunsImg {
       cursor: pointer;
       margin-top: -50px;
       position: relative;
-      // z-index: 1;
     }
     #article-middle-section1:hover {
       #bunsImg {
@@ -142,6 +148,11 @@
     }
     // Animation for BunS ends here
     //Animation for Bread starts here
+
+    #breadText {
+      margin-top: 7rem;
+      margin-bottom: -2.3rem;
+    }
     #breadImg {
       margin-top: -50px;
       cursor: pointer;
@@ -158,8 +169,12 @@
     }
     //Animation for Bread ends here
     //Animation for Croissants starts here
+    #CroissantText {
+      margin-top: 7rem;
+      margin-bottom: -3rem;
+    }
     #croissantImg {
-      margin-top: -50px;
+      margin-top: -2.3rem;
       cursor: pointer;
     }
     #article-middle-section3:hover {
@@ -211,69 +226,69 @@
     }
   }
 
- /*here starts the container in section 3*/
- 
-    .lower-section {
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 10%;
-      display:flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      height: 500px;
+  /*here starts the container in section 3*/
 
-    .lower-article{
-        width: 50%;
-        height: 50%;
-        flex-direction: column;
-        height: 100%;
-        align-items: flex-end;
+  .lower-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 500px;
+
+    .lower-article {
+      width: 50%;
+      height: 50%;
+      flex-direction: column;
+      height: 100%;
+      align-items: flex-end;
+      text-align: left;
+      p,
+      button {
+        font-family: $Montserrat;
+      }
+      p {
+        margin-top: 36px;
+        margin-bottom: 14px;
         text-align: left;
-        p,button{
-          font-family: $Montserrat;
-        }
-        p{
-          margin-top: 36px;
-          margin-bottom: 14px;
-          text-align: left;
-          margin-left: 30px;
-          font-size: 1.3rem;
-        }
-        
+        margin-left: 30px;
+        font-size: 1.3rem;
+      }
 
-        #button{
-          cursor: pointer;
-          width: 20%;
-          margin-bottom: 31px;
-          margin-left: 30px;
-          border-radius: 11px;
-          border: none;
-          color: $black;
-          background-color: $primary-backgroundcolor;
-          padding: 6px;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          font-size: 1rem;
-          font-weight: bold;
-          }
+      #button {
+        cursor: pointer;
+        width: 20%;
+        margin-bottom: 31px;
+        margin-left: 30px;
+        border-radius: 11px;
+        border: none;
+        color: $black;
+        background-color: $primary-backgroundcolor;
+        padding: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+      }
 
-          #Hands{
-            height: 51%;
-            width: 100%;
-            display: block;
-              }
-            }
+      #Hands {
+        height: 50.4%;
+        width: 100%;
+        display: block;
+      }
+    }
 
-            img{
-              object-fit: cover;
-              height: 100%;
-              width: 50%;
-              }
-          }
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 50%;
+    }
+  }
 
-/*here starts the footer*/
+  /*here starts the footer*/
 
   footer {
     color: $primary-backgroundcolor;
@@ -324,7 +339,6 @@
       cursor: pointer;
     }
 
-
     .buttonStart,
     .buttonEnd,
     .btnDis .buttonStart {
@@ -352,12 +366,12 @@
       background: #7d9d9c;
     }
     .btnDis {
+      // margin-left: 7px;
+      // margin-right: -5px;
       background-color: $btn-disabled;
     }
     // Subscribe button and Animation Ends //
 
-
-    
     #Instagram {
       grid-column-start: 6;
       grid-column-end: 7;
@@ -410,6 +424,5 @@
       font-weight: bold;
       cursor: pointer;
     }
-}
-
+  }
 }
