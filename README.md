@@ -6,5 +6,5 @@ Mall-repo för kursen `Grafiska Verktyg`
 
 Av någon anledning drogs våran inspiration till ett bageri. Vi valde att försöka oss på att göra en generisk bagerisida som lockar smaklökarna och får en att känna doften av nybakat bröd. Färgtemat valdes att vara åt det kyligare hållet för att förstärka värmen och kärleken från brödet och bakverken. Vi vill att upplevelsen från denna sida ska vara som en mysig höstmorgonsfrukost. Resten av designen är gjord i ett försök att vara görbar men klurig nog att orsaka iaf några vredesutbrott. 
 
-#Page
+# Page
 https://medieinstitutet.github.io/fed21d-grafiska-verktyg-croissant/
