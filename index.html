@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="Author:Magnus,Jonas,Jenny,Anton" />
+    <meta property="og:title" content="Croissants" />
+    <meta property="og:type" content="Website" />
+
+    <link rel="manifest" href="./assets/Imgs/Favicon/site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/Imgs/Favicon/favicon-16x16.png?"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/Imgs/Favicon/favicon-32x32.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/Imgs/Favicon/apple-touch-icon.png?"
+    />
+    <meta name="theme-color" content="#fafafa" />
+    <title>Bakery Croissants</title>
+  </head>
+  <body>
+    <main
+      class="main-container"
+      aria-label="main container thats includes sections and articles"
+    >
+      <header>
+        <button id="menu-button" aria-label="menu-button">
+          <span class="burgerLines"></span>
+          <span class="burgerLines"></span>
+          <span class="burgerLines"></span>
+        </button>
+
+        <!-- class="nav-container" -->
+        <nav
+          class="menu-for-bigger-screen"
+          aria-label="This will only be use for bigger screens, Home, About, Contact links are here"
+        >
+          <ul class="nav-menu" id="menu2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- section 1-->
+      <section
+        class="head-section"
+        aria-label="A short summary about our bakery"
+      >
+        <h1 class="h1">Bakery Croissants</h1>
+
+        <p>
+          Cupcake ipsum dolor sit amet brownie marshmallow tiramisu biscuit.
+          Shortbread cake cupcake chocolate danish sweet brownie.
+        </p>
+        <img
+          src="./assets/logo.svg"
+          alt="The logo for the Bakery"
+          class="logo"
+          height="390"
+          width="250"
+        />
+      </section>
+
+      <!-- section 2 -->
+      <section
+        class="middle-section"
+        aria-label="Middle section of the pages. That includes three cards each one being a article follow up by short text and our opening hours"
+      >
+        <article
+          id="article-middle-section1"
+          class="article-middle-section"
+          aria-label="First card with a picture of our good buns and with a short description "
+        >
+          <h2>Buns</h2>
+          <p id="bunsText" class="article-middle-section-p">
+            Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
+            candy canes cheesecake danish jelly beans cotton candy.
+          </p>
+          <article
+            class="img-container"
+            aria-label="This article contains our picture of good buns"
+          >
+            <img
+              id="bunsImg"
+              src="assets/Imgs/card-img-buns.webp"
+              alt="Buns"
+              height="500"
+              width="500"
+            />
+          </article>
+        </article>
+
+        <article
+          id="article-middle-section2"
+          class="article-middle-section"
+          aria-label="Second card with a picture of our good bread and with a short description "
+        >
+          <h2>Bread</h2>
+          <p id="breadText" class="article-middle-section-p">
+            Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
+            candy canes cheesecake danish jelly beans cotton candy.
+          </p>
+          <article class="img-container">
+            <img
+              src="assets/Imgs/card-img-breads.webp"
+              id="breadImg"
+              alt="Bread"
+              height="500"
+              width="500"
+            />
+          </article>
+        </article>
+
+        <article id="article-middle-section3" class="article-middle-section">
+          <h2>Croissants</h2>
+          <p id="CroissantText" class="article-middle-section-p">
+            Dessert caramels pastry tiramisu jelly. Dessert powder toffee wafer
+            candy canes cheesecake danish jelly beans cotton candy.
+          </p>
+          <article
+            class="img-container"
+            aria-label="This article contains our picture of good bread"
+          >
+            <img
+              id="croissantImg"
+              src="assets/Imgs/card-breads-img.webp"
+              alt="Croissants"
+              height="500"
+              width="500"
+            />
+          </article>
+        </article>
+      </section>
+      <!-- section 3 -->
+
+      <article
+        class="lower-section-visit-us"
+        aria-label="This article contains a short text"
+      >
+        <h3>Visit Us <span id="span"></span></h3>
+      </article>
+
+      <section
+        class="lower-section"
+        aria-label="This section contains articles with text with our opening hours"
+      >
+        <!-- <article class="box2"> -->
+        <article
+          class="lower-article"
+          aria-label="This article is showing our opening hours and a button leading to our menu"
+        >
+          <p>
+            Opening hours <br />
+            Mon-Fri <br />
+            7 am- 7 pm <br />
+            Sat-Sun <br />
+            8 am - 2pm
+          </p>
+          <button id="button">Menu</button>
+          <!-- </article> -->
+          <img
+            id="Hands"
+            src="assets/Imgs/footer-img-desktop.webp"
+            alt="Hands"
+            height="336"
+            width="504"
+          />
+        </article>
+        <img
+          id="bread"
+          src="assets/Imgs/footer-img-bread.webp"
+          alt="Bread"
+          height="337"
+          width="509"
+        />
+      </section>
+    </main>
+
+    <!-- cookies text -->
+    <article
+      id="cookie-container"
+      aria-label="Cookie container, show our cookie text and button for accepting our term and conditions when it comes to cookies"
+    >
+      <p>We are using freshly baked cookies - Accept yours by clicking here</p>
+      <button onclick="CookieTextDown()">Accept</button>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+      <h3>Contact</h3>
+      <p id="footer-text">New bread dropping soon - subscribe here</p>
+      <input type="text" placeholder="name@mail.com" />
+      <button id="subscribeBtn" class="buttonStart">
+        <span id="subText">Subscribe</span><span id="w">✓</span>
+      </button>
+      <img
+        src="assets/Imgs/Company-icons/Instagram-logo.svg"
+        alt="Instagram"
+        id="Instagram"
+        height="37"
+        width="37"
+      />
+      <img
+        src="assets/Imgs/Company-icons/Facebook-logo.svg"
+        alt="Facebook"
+        id="Facebook"
+        height="45"
+        width="37"
+      />
+      <img
+        src="assets/Imgs/Company-icons/Linkedin-logo.svg"
+        alt="LinkedIn"
+        id="LinkedIn"
+        height="37"
+        width="37"
+      />
+      <p class="bottom-p">@copyright bakery croissants - 2022</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

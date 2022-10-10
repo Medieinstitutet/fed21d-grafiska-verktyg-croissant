@@ -1,0 +1,428 @@
+@media only screen and (min-width: 1001px) {
+  nav {
+    height: 80px;
+  }
+
+  nav,
+  .menu-for-bigger-screen {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  // codepen
+  .menu-for-bigger-screen {
+    .nav-menu {
+      height: 100%;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      li {
+        cursor: pointer;
+        display: block;
+        height: 60%;
+        font-size: 1.5rem;
+        font-family: $Montserrat;
+        font-weight: 600;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $black;
+        text-transform: uppercase;
+        transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        text-align: center;
+        padding: 0 10px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+      }
+
+      li:after,
+      li:before {
+        content: '';
+        position: absolute;
+        display: block;
+        border: 0px solid transparent;
+        width: 0%;
+        height: 0%;
+        transition: all 0.5s ease;
+      }
+
+      li:after {
+        width: 0%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+      }
+
+      li:before {
+        width: 0%;
+        height: 0%;
+        right: 0;
+        bottom: 0;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
+      }
+
+      li:hover::before,
+      li:hover::after {
+        width: 100%;
+        height: 100%;
+        border-color: rgb(0, 0, 0);
+      }
+    }
+
+    // codepenn
+  }
+
+  // nav for bigger screen
+
+  #menu-button {
+    display: none;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    width: 60%;
+    li {
+      a {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  /* section 1*/
+  .head-section {
+    background-image: url('../assets/Imgs/fronpage-img.webp');
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+
+    h1,
+    p {
+      grid-column-start: 6;
+      grid-column-end: 21;
+    }
+    h1 {
+      top: 70%;
+      font-size: 6.25rem;
+    }
+    p {
+      top: 100px;
+    }
+    img {
+      width: 100%;
+      grid-column-start: 12;
+      grid-column-end: 15;
+    }
+  }
+
+  /* section 2*/
+
+  .middle-section {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    margin-bottom: 10%;
+    h2 {
+      margin-bottom: -2rem;
+    }
+
+    // Animation for Buns
+    #bunsText {
+      margin-top: 7.9rem;
+      margin-bottom: -3rem;
+    }
+    #bunsImg {
+      cursor: pointer;
+      margin-top: -50px;
+      position: relative;
+    }
+    #article-middle-section1:hover {
+      #bunsImg {
+        transform: translateY(100px);
+        transition: 2s;
+      }
+    }
+    // Animation for BunS ends here
+    //Animation for Bread starts here
+
+    #breadText {
+      margin-top: 7rem;
+      margin-bottom: -2.3rem;
+    }
+    #breadImg {
+      margin-top: -50px;
+      cursor: pointer;
+      position: relative;
+    }
+    #article-middle-section2:hover {
+      transform: translateY(-100px);
+      transition: 2s;
+      #breadImg {
+        transform: translateY(150px);
+        transition: 2s;
+        z-index: 10;
+      }
+    }
+    //Animation for Bread ends here
+    //Animation for Croissants starts here
+    #CroissantText {
+      margin-top: 7rem;
+      margin-bottom: -3rem;
+    }
+    #croissantImg {
+      margin-top: -2.3rem;
+      cursor: pointer;
+    }
+    #article-middle-section3:hover {
+      transform: translateY(-100px);
+      transition: 2s;
+      #croissantImg {
+        transform: translateY(100px);
+        transition: 2s;
+        z-index: 10;
+      }
+    }
+    //Animation for Croissants ends here
+
+    #article-middle-section1 {
+      margin-top: 100px;
+      width: 100%;
+      height: 300px;
+      grid-column-start: 2;
+      grid-column-end: 9;
+    }
+
+    #article-middle-section2 {
+      margin-top: 200px;
+      width: 100%;
+      height: 300px;
+      grid-column-start: 10;
+      grid-column-end: 17;
+    }
+
+    #article-middle-section3 {
+      margin-top: 300px;
+      width: 100%;
+      height: 300px;
+      grid-column-start: 18;
+      grid-column-end: 25;
+    }
+  }
+  /* section 3*/
+
+  .lower-section-visit-us {
+    width: 100%;
+    margin-bottom: 30px;
+    h3 {
+      font-size: 1.5rem;
+      #span {
+        top: 20px;
+        width: 6.3rem;
+      }
+    }
+  }
+
+  /*here starts the container in section 3*/
+
+  .lower-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 500px;
+
+    .lower-article {
+      width: 50%;
+      height: 50%;
+      flex-direction: column;
+      height: 100%;
+      align-items: flex-end;
+      text-align: left;
+      p,
+      button {
+        font-family: $Montserrat;
+      }
+      p {
+        margin-top: 36px;
+        margin-bottom: 14px;
+        text-align: left;
+        margin-left: 30px;
+        font-size: 1.3rem;
+      }
+
+      #button {
+        cursor: pointer;
+        width: 20%;
+        margin-bottom: 31px;
+        margin-left: 30px;
+        border-radius: 11px;
+        border: none;
+        color: $black;
+        background-color: $primary-backgroundcolor;
+        padding: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      #Hands {
+        height: 50.4%;
+        width: 100%;
+        display: block;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 50%;
+    }
+  }
+
+  /*here starts the footer*/
+
+  footer {
+    color: $primary-backgroundcolor;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    background-color: $Footer-background;
+    padding-top: 20px;
+
+    h3 {
+      font-size: 2rem;
+      margin: 20px;
+      text-align: left;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 2;
+    }
+
+    #footer-text {
+      margin-left: 20px;
+      text-align: left;
+      grid-column-start: 12;
+      grid-column-end: 17;
+      grid-row-start: 2;
+    }
+    input {
+      height: 30px;
+      border: none;
+      border-radius: 11px;
+      grid-column-start: 12;
+      grid-column-end: 15;
+      margin: 20px;
+      grid-row-start: 2;
+    }
+
+    input::placeholder {
+      padding-left: 10px;
+    }
+
+    // Subscribe button and Animation //
+    button {
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+      grid-column-start: 15;
+      grid-column-end: 17;
+      margin: 20px;
+      grid-row-start: 2;
+      cursor: pointer;
+    }
+
+    .buttonStart,
+    .buttonEnd,
+    .btnDis .buttonStart {
+      cursor: pointer;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 135px;
+      height: 30px;
+      border-radius: 60px;
+      background-color: $btn-primary-backgroundcolor;
+      text-align: center;
+      color: $btn-color;
+      font-weight: bold;
+      overflow: hidden;
+
+      #w {
+        display: none;
+      }
+    }
+    .buttonStart:hover {
+      background-color: $btn-hover;
+    }
+    .buttonEnd {
+      background: #7d9d9c;
+    }
+    .btnDis {
+      // margin-left: 7px;
+      // margin-right: -5px;
+      background-color: $btn-disabled;
+    }
+    // Subscribe button and Animation Ends //
+
+    #Instagram {
+      grid-column-start: 6;
+      grid-column-end: 7;
+    }
+    #Facebook {
+      grid-column-start: 8;
+      grid-column-end: 10;
+    }
+    #LinkedIn {
+      grid-column-start: 10;
+      grid-column-end: 12;
+    }
+    .bottom-p {
+      margin-bottom: 10%;
+      font-style: italic;
+      text-align: center;
+      grid-column-start: 6;
+      grid-column-end: 14;
+      grid-row-start: 3;
+    }
+  }
+
+  #cookie-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: $text;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: $black;
+    p {
+      text-align: right;
+      margin-top: 20px;
+      color: $primary-backgroundcolor;
+      width: 80%;
+    }
+
+    button {
+      cursor: pointer;
+      border-radius: 11px;
+      border: none;
+      color: $black;
+      background-color: $primary-backgroundcolor;
+      margin: 5px;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
